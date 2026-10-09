@@ -1,0 +1,761 @@
+[
+{
+"case_id": "H01",
+"discharge_summary_text": "DISCHARGE SUMMARY - EXTRACTED PDF TEXT\nPatient: Maya Ortiz | Age: 68 | Sex: female\nHospital: Riverview Medical Center\nAttending physician: Dr. Elena Morris | Specialty: Cardiology\nAdmit date: 2026-04-27 | Discharge date: 2026-05-01\nDiagnosis: Acute on chronic congestive heart failure, clinically improved. ICD-10: I50.9.\nMedications: Furosemide 40 mg by mouth every morning; may take with food, avoid high-salt meals. Lisinopril 10 mg by mouth daily; avoid potassium salt substitutes unless approved. Metoprolol succinate 25 mg by mouth daily with or right after food. Potassium chloride 20 mEq by mouth daily; take with food and water, avoid extra potassium supplements unless prescribed.\nUpcoming appointments: Cardiology clinic in 7 days for weight and medication review. Primary care follow-up in 10-14 days with lab check.\nGo to the ER now for: severe trouble getting air while resting, chest pressure or pain, fainting or new confusion, blue/gray lips, or coughing pink frothy mucus.\nCall the doctor within 24 hours for: weight gain of 2 pounds in one day or 5 pounds in a week, new or worse ankle/leg swelling, or needing extra pillows to sleep.\nDiet/activity: 2 gram sodium diet, fluid limit 2 liters/day unless changed by cardiology, weigh every morning, walk short distances and rest when tired.",
+"checkin_response": {
+"day": 9,
+"medications_taken": {
+"Furosemide": true,
+"Lisinopril": true,
+"Metoprolol succinate": true,
+"Potassium chloride": true
+},
+"free_text_concern": "No worries today. I took all my pills, weighed myself after using the bathroom, and my weight is right where it has been. I can walk around the house without new symptoms.",
+"weight_lbs": 181.0,
+"other_fields": {
+"baseline_discharge_weight_lbs": 181.2,
+"ankle_swelling": "none",
+"sleeping_pillows": 2,
+"bp_mmHg": "124/76",
+"heart_rate_bpm": 72
+}
+},
+"prior_checkin_history": [],
+"expected_classification": "GREEN",
+"expected_escalation_tier": "NONE"
+},
+{
+"case_id": "H02",
+"discharge_summary_text": "DISCHARGE SUMMARY - EXTRACTED PDF TEXT\nPatient: Leonard Pierce | Age: 74 | Sex: male\nHospital: Lakeside Regional Hospital\nAttending physician: Dr. Elena Morris | Specialty: Cardiology\nAdmit date: 2026-04-28 | Discharge date: 2026-05-02\nDiagnosis: Acute on chronic congestive heart failure, clinically improved. ICD-10: I50.9.\nMedications: Furosemide 40 mg by mouth every morning; may take with food, avoid high-salt meals. Lisinopril 10 mg by mouth daily; avoid potassium salt substitutes unless approved. Metoprolol succinate 25 mg by mouth daily with or right after food. Potassium chloride 20 mEq by mouth daily; take with food and water, avoid extra potassium supplements unless prescribed.\nUpcoming appointments: Cardiology clinic in 7 days for weight and medication review. Primary care follow-up in 10-14 days with lab check.\nGo to the ER now for: severe trouble getting air while resting, chest pressure or pain, fainting or new confusion, blue/gray lips, or coughing pink frothy mucus.\nCall the doctor within 24 hours for: weight gain of 2 pounds in one day or 5 pounds in a week, new or worse ankle/leg swelling, or needing extra pillows to sleep.\nDiet/activity: 2 gram sodium diet, fluid limit 2 liters/day unless changed by cardiology, weigh every morning, walk short distances and rest when tired.",
+"checkin_response": {
+"day": 6,
+"medications_taken": {
+"Furosemide": true,
+"Lisinopril": true,
+"Metoprolol succinate": true,
+"Potassium chloride": true
+},
+"free_text_concern": "I am a little tired after showering, but it feels like normal recovery tiredness and goes away after I sit down. No new swelling and I took everything today.",
+"weight_lbs": 196.4,
+"other_fields": {
+"baseline_discharge_weight_lbs": 196.5,
+"ankle_swelling": "none",
+"sleeping_pillows": 2,
+"bp_mmHg": "118/74",
+"heart_rate_bpm": 70
+}
+},
+"prior_checkin_history": [],
+"expected_classification": "GREEN",
+"expected_escalation_tier": "NONE"
+},
+{
+"case_id": "H03",
+"discharge_summary_text": "DISCHARGE SUMMARY - EXTRACTED PDF TEXT\nPatient: Denise Walker | Age: 66 | Sex: female\nHospital: Northgate Community Hospital\nAttending physician: Dr. Peter Lang | Specialty: Pulmonology\nAdmit date: 2026-04-30 | Discharge date: 2026-05-03\nDiagnosis: Chronic obstructive pulmonary disease exacerbation, improved at discharge. ICD-10: J44.1.\nMedications: Tiotropium 18 mcg inhaled once daily; no food interaction. Albuterol HFA 2 puffs every 4-6 hours as needed; no food interaction, rinse mouth if shaky or dry. Prednisone 20 mg by mouth daily for 5 days; take with food and avoid excess alcohol. Azithromycin 250 mg by mouth daily until finished; may take with food if stomach upset and avoid antacids within 2 hours.\nUpcoming appointments: Pulmonology follow-up in 1 week. Primary care visit in 2 weeks; bring inhalers to visit.\nGo to the ER now for: severe breathing trouble not relieved by rescue inhaler, blue lips or fingernails, chest pain, fainting, confusion, or oxygen saturation persistently below 90% if checked.\nCall the doctor within 24 hours for: increased cough or change in sputum color, fever over 100.4 F, needing rescue inhaler more often than usual, or uncertainty about inhaler use.\nDiet/activity: drink fluids unless restricted, small frequent meals, no smoking or vaping, use pursed-lip breathing, walk slowly and rest between activities.",
+"checkin_response": {
+"day": 4,
+"medications_taken": {
+"Tiotropium": true,
+"Albuterol HFA": true,
+"Prednisone": true,
+"Azithromycin": true
+},
+"free_text_concern": "Nothing worrying. I used my maintenance inhaler this morning and I have not had any breathing complaints. My cough is quieter than when I left the hospital.",
+"oxygen_saturation_percent": 96,
+"rescue_inhaler_uses": 0,
+"other_fields": {
+"sputum": "scant clear",
+"temperature_f": 98.2,
+"activity": "walked to mailbox slowly"
+}
+},
+"prior_checkin_history": [],
+"expected_classification": "GREEN",
+"expected_escalation_tier": "NONE"
+},
+{
+"case_id": "H04",
+"discharge_summary_text": "DISCHARGE SUMMARY - EXTRACTED PDF TEXT\nPatient: Gordon Nguyen | Age: 71 | Sex: male\nHospital: St. Anne Medical Pavilion\nAttending physician: Dr. Peter Lang | Specialty: Pulmonology\nAdmit date: 2026-05-01 | Discharge date: 2026-05-04\nDiagnosis: Chronic obstructive pulmonary disease exacerbation, improved at discharge. ICD-10: J44.1.\nMedications: Tiotropium 18 mcg inhaled once daily; no food interaction. Albuterol HFA 2 puffs every 4-6 hours as needed; no food interaction, rinse mouth if shaky or dry. Prednisone 20 mg by mouth daily for 5 days; take with food and avoid excess alcohol. Azithromycin 250 mg by mouth daily until finished; may take with food if stomach upset and avoid antacids within 2 hours.\nUpcoming appointments: Pulmonology follow-up in 1 week. Primary care visit in 2 weeks; bring inhalers to visit.\nGo to the ER now for: severe breathing trouble not relieved by rescue inhaler, blue lips or fingernails, chest pain, fainting, confusion, or oxygen saturation persistently below 90% if checked.\nCall the doctor within 24 hours for: increased cough or change in sputum color, fever over 100.4 F, needing rescue inhaler more often than usual, or uncertainty about inhaler use.\nDiet/activity: drink fluids unless restricted, small frequent meals, no smoking or vaping, use pursed-lip breathing, walk slowly and rest between activities.",
+"checkin_response": {
+"day": 8,
+"medications_taken": {
+"Tiotropium": true,
+"Albuterol HFA": true,
+"Prednisone": true,
+"Azithromycin": true
+},
+"free_text_concern": "Routine day. I confirmed my lung doctor appointment for Friday, took the prednisone with breakfast, and my inhalers are making sense so far.",
+"oxygen_saturation_percent": 95,
+"rescue_inhaler_uses": 1,
+"other_fields": {
+"sputum": "usual clear morning mucus",
+"temperature_f": 98.4,
+"appointment_confirmed": true
+}
+},
+"prior_checkin_history": [],
+"expected_classification": "GREEN",
+"expected_escalation_tier": "NONE"
+},
+{
+"case_id": "H05",
+"discharge_summary_text": "DISCHARGE SUMMARY - EXTRACTED PDF TEXT\nPatient: Patricia Hill | Age: 63 | Sex: female\nHospital: Cedar Valley Hospital\nAttending physician: Dr. Sara Whitman | Specialty: Orthopedic Surgery\nAdmit date: 2026-05-02 | Discharge date: 2026-05-05\nDiagnosis: Aftercare following right total hip replacement. ICD-10: Z47.1; presence of right artificial hip joint Z96.641.\nMedications: Acetaminophen 650 mg by mouth every 6 hours as needed; avoid alcohol and do not exceed the daily limit. Oxycodone 5 mg by mouth every 6 hours as needed for severe pain; take with food, avoid alcohol, and do not drive. Aspirin 81 mg by mouth twice daily for blood clot prevention; take with food and avoid extra NSAIDs unless surgeon approves. Senna-docusate 8.6/50 mg by mouth nightly while using opioids; take with water and fiber.\nUpcoming appointments: Orthopedic surgery wound check in 10-14 days. Outpatient physical therapy twice weekly starting this week.\nGo to the ER now for: chest pain or sudden breathing trouble, one calf becoming very painful/swollen, inability to bear weight after a pop or fall, uncontrolled bleeding, or fever over 101.5 F with pus from incision.\nCall the doctor within 24 hours for: increasing incision redness/warmth/drainage, pain that is worsening despite medicine, constipation over 3 days, or low-grade fever.\nDiet/activity: high-protein meals, fluids and fiber, weight bearing as tolerated with walker, follow hip precautions, no driving while taking opioid pain medicine.",
+"checkin_response": {
+"day": 5,
+"medications_taken": {
+"Acetaminophen": true,
+"Oxycodone": true,
+"Aspirin": true,
+"Senna-docusate": true
+},
+"free_text_concern": "Pain is controlled with the schedule they gave me. I did both sets of PT exercises and walked with the walker to the kitchen and back. Nothing alarming.",
+"pain_score_0_10": 3,
+"other_fields": {
+"incision": "dry dressing, no new redness",
+"pt_exercises_done": true,
+"walker_used": true,
+"calf_pain": "none"
+}
+},
+"prior_checkin_history": [],
+"expected_classification": "GREEN",
+"expected_escalation_tier": "NONE"
+},
+{
+"case_id": "H06",
+"discharge_summary_text": "DISCHARGE SUMMARY - EXTRACTED PDF TEXT\nPatient: Samuel Brooks | Age: 69 | Sex: male\nHospital: Brookfield General Hospital\nAttending physician: Dr. Sara Whitman | Specialty: Orthopedic Surgery\nAdmit date: 2026-05-03 | Discharge date: 2026-05-06\nDiagnosis: Aftercare following right total hip replacement. ICD-10: Z47.1; presence of right artificial hip joint Z96.641.\nMedications: Acetaminophen 650 mg by mouth every 6 hours as needed; avoid alcohol and do not exceed the daily limit. Oxycodone 5 mg by mouth every 6 hours as needed for severe pain; take with food, avoid alcohol, and do not drive. Aspirin 81 mg by mouth twice daily for blood clot prevention; take with food and avoid extra NSAIDs unless surgeon approves. Senna-docusate 8.6/50 mg by mouth nightly while using opioids; take with water and fiber.\nUpcoming appointments: Orthopedic surgery wound check in 10-14 days. Outpatient physical therapy twice weekly starting this week.\nGo to the ER now for: chest pain or sudden breathing trouble, one calf becoming very painful/swollen, inability to bear weight after a pop or fall, uncontrolled bleeding, or fever over 101.5 F with pus from incision.\nCall the doctor within 24 hours for: increasing incision redness/warmth/drainage, pain that is worsening despite medicine, constipation over 3 days, or low-grade fever.\nDiet/activity: high-protein meals, fluids and fiber, weight bearing as tolerated with walker, follow hip precautions, no driving while taking opioid pain medicine.",
+"checkin_response": {
+"day": 6,
+"medications_taken": {
+"Acetaminophen": true,
+"Oxycodone": true,
+"Aspirin": true,
+"Senna-docusate": true
+},
+"free_text_concern": "The incision looks like it is healing normally to me. A little bruising around the hip, but it is fading and there is no drainage or heat.",
+"pain_score_0_10": 2,
+"other_fields": {
+"incision": "closed and dry",
+"pt_exercises_done": true,
+"temperature_f": 98.5,
+"calf_pain": "none"
+}
+},
+"prior_checkin_history": [],
+"expected_classification": "GREEN",
+"expected_escalation_tier": "NONE"
+},
+{
+"case_id": "H07",
+"discharge_summary_text": "DISCHARGE SUMMARY - EXTRACTED PDF TEXT\nPatient: Camila Reed | Age: 58 | Sex: female\nHospital: Harborview District Hospital\nAttending physician: Dr. Priya Shah | Specialty: Endocrinology\nAdmit date: 2026-05-05 | Discharge date: 2026-05-07\nDiagnosis: Type 2 diabetes mellitus with recent hyperglycemia, improved before discharge. ICD-10: E11.65.\nMedications: Metformin 500 mg by mouth twice daily with meals; avoid excess alcohol. Insulin glargine 18 units subcutaneously at bedtime; keep meal pattern consistent and do not skip meals without clinician advice. Empagliflozin 10 mg by mouth every morning; may take with or without food and drink adequate water. Atorvastatin 20 mg by mouth nightly; avoid large amounts of grapefruit.\nUpcoming appointments: Primary care diabetes follow-up in 1 week with glucose log. Diabetes educator appointment in 2 weeks for meter and insulin pen review.\nGo to the ER now for: blood sugar over 400 with vomiting or severe weakness, severe low sugar with confusion or passing out, chest pain, rapid deep breathing or fruity breath, or signs of severe dehydration.\nCall the doctor within 24 hours for: repeated glucose readings above 250 or below 70, uncertainty about medication dosing, new infected wound, or inability to keep fluids down.\nDiet/activity: consistent carbohydrate meals, check glucose as instructed, carry quick sugar source, walk daily as tolerated, avoid skipping meals.",
+"checkin_response": {
+"day": 3,
+"medications_taken": {
+"Metformin": true,
+"Insulin glargine": true,
+"Empagliflozin": true,
+"Atorvastatin": true
+},
+"free_text_concern": "No concerns. I checked before breakfast and the number was in my target range. I took the pills with meals and used the bedtime insulin last night.",
+"fasting_glucose_mg_dl": 128,
+"other_fields": {
+"post_meal_glucose_mg_dl": 154,
+"hypoglycemia_symptoms": false,
+"meals": "consistent carbohydrates"
+}
+},
+"prior_checkin_history": [],
+"expected_classification": "GREEN",
+"expected_escalation_tier": "NONE"
+},
+{
+"case_id": "H08",
+"discharge_summary_text": "DISCHARGE SUMMARY - EXTRACTED PDF TEXT\nPatient: Arthur James | Age: 72 | Sex: male\nHospital: Maple Ridge Medical Center\nAttending physician: Dr. Nathan Bell | Specialty: Internal Medicine\nAdmit date: 2026-05-05 | Discharge date: 2026-05-08\nDiagnosis: Community-acquired pneumonia, clinically improving. ICD-10: J18.9.\nMedications: Amoxicillin-clavulanate 875/125 mg by mouth twice daily until finished; take with food. Azithromycin 250 mg by mouth daily until finished; may take with food if stomach upset and avoid antacids within 2 hours. Acetaminophen 650 mg by mouth every 6 hours as needed for fever; avoid alcohol and stay within daily limit. Guaifenesin 600 mg by mouth twice daily with a full glass of water; no major food interaction.\nUpcoming appointments: Primary care follow-up in 5-7 days. Repeat chest x-ray in 4-6 weeks if ordered.\nGo to the ER now for: severe breathing trouble, fever 103 F or higher, chest pain, confusion, blue lips, coughing blood, or oxygen saturation below 90% if checked.\nCall the doctor within 24 hours for: fever over 100.4 F after 48 hours on antibiotics, worsening cough or sputum, medication side effects, or not being able to drink fluids.\nDiet/activity: drink fluids, eat small protein-rich meals, avoid smoke, use incentive spirometer if provided, rest with gradual walking as energy returns.",
+"checkin_response": {
+"day": 4,
+"medications_taken": {
+"Amoxicillin-clavulanate": true,
+"Azithromycin": true,
+"Acetaminophen": true,
+"Guaifenesin": true
+},
+"free_text_concern": "I feel a little better today. Still coughing some, but no fever and I can move around the apartment more than yesterday.",
+"temperature_f": 98.7,
+"oxygen_saturation_percent": 96,
+"other_fields": {
+"cough": "improving",
+"sputum": "small amount pale yellow",
+"fluids": "drinking well"
+}
+},
+"prior_checkin_history": [],
+"expected_classification": "GREEN",
+"expected_escalation_tier": "NONE"
+},
+{
+"case_id": "H09",
+"discharge_summary_text": "DISCHARGE SUMMARY - EXTRACTED PDF TEXT\nPatient: Elaine Foster | Age: 77 | Sex: female\nHospital: Riverview Medical Center\nAttending physician: Dr. Elena Morris | Specialty: Cardiology\nAdmit date: 2026-05-05 | Discharge date: 2026-05-09\nDiagnosis: Acute on chronic congestive heart failure, clinically improved. ICD-10: I50.9.\nMedications: Furosemide 40 mg by mouth every morning; may take with food, avoid high-salt meals. Lisinopril 10 mg by mouth daily; avoid potassium salt substitutes unless approved. Metoprolol succinate 25 mg by mouth daily with or right after food. Potassium chloride 20 mEq by mouth daily; take with food and water, avoid extra potassium supplements unless prescribed.\nUpcoming appointments: Cardiology clinic in 7 days for weight and medication review. Primary care follow-up in 10-14 days with lab check.\nGo to the ER now for: severe trouble getting air while resting, chest pressure or pain, fainting or new confusion, blue/gray lips, or coughing pink frothy mucus.\nCall the doctor within 24 hours for: weight gain of 2 pounds in one day or 5 pounds in a week, new or worse ankle/leg swelling, or needing extra pillows to sleep.\nDiet/activity: 2 gram sodium diet, fluid limit 2 liters/day unless changed by cardiology, weigh every morning, walk short distances and rest when tired.",
+"checkin_response": {
+"day": 14,
+"medications_taken": {
+"Furosemide": true,
+"Lisinopril": true,
+"Metoprolol succinate": true,
+"Potassium chloride": true
+},
+"free_text_concern": "This is another steady day. I took every medication, my ankles look normal, and my weight has stayed the same for several days.",
+"weight_lbs": 174.8,
+"other_fields": {
+"baseline_discharge_weight_lbs": 175.0,
+"green_streak_days": 6,
+"ankle_swelling": "none",
+"sleeping_pillows": 2
+}
+},
+"prior_checkin_history": [],
+"expected_classification": "GREEN",
+"expected_escalation_tier": "NONE"
+},
+{
+"case_id": "H10",
+"discharge_summary_text": "DISCHARGE SUMMARY - EXTRACTED PDF TEXT\nPatient: Michael Chen | Age: 64 | Sex: male\nHospital: Lakeside Regional Hospital\nAttending physician: Dr. Peter Lang | Specialty: Pulmonology\nAdmit date: 2026-05-07 | Discharge date: 2026-05-10\nDiagnosis: Chronic obstructive pulmonary disease exacerbation, improved at discharge. ICD-10: J44.1.\nMedications: Tiotropium 18 mcg inhaled once daily; no food interaction. Albuterol HFA 2 puffs every 4-6 hours as needed; no food interaction, rinse mouth if shaky or dry. Prednisone 20 mg by mouth daily for 5 days; take with food and avoid excess alcohol. Azithromycin 250 mg by mouth daily until finished; may take with food if stomach upset and avoid antacids within 2 hours.\nUpcoming appointments: Pulmonology follow-up in 1 week. Primary care visit in 2 weeks; bring inhalers to visit.\nGo to the ER now for: severe breathing trouble not relieved by rescue inhaler, blue lips or fingernails, chest pain, fainting, confusion, or oxygen saturation persistently below 90% if checked.\nCall the doctor within 24 hours for: increased cough or change in sputum color, fever over 100.4 F, needing rescue inhaler more often than usual, or uncertainty about inhaler use.\nDiet/activity: drink fluids unless restricted, small frequent meals, no smoking or vaping, use pursed-lip breathing, walk slowly and rest between activities.",
+"checkin_response": {
+"day": 21,
+"medications_taken": {
+"Tiotropium": true,
+"Albuterol HFA": true,
+"Prednisone": true,
+"Azithromycin": true
+},
+"free_text_concern": "I am near my usual baseline. No new cough, no fever, and I only used the rescue inhaler once before my longer walk.",
+"oxygen_saturation_percent": 96,
+"rescue_inhaler_uses": 1,
+"other_fields": {
+"green_streak_days": 8,
+"sputum": "usual clear",
+"temperature_f": 98.1
+}
+},
+"prior_checkin_history": [],
+"expected_classification": "GREEN",
+"expected_escalation_tier": "NONE"
+},
+{
+"case_id": "H11",
+"discharge_summary_text": "DISCHARGE SUMMARY - EXTRACTED PDF TEXT\nPatient: Rosa Martinez | Age: 70 | Sex: female\nHospital: Northgate Community Hospital\nAttending physician: Dr. Sara Whitman | Specialty: Orthopedic Surgery\nAdmit date: 2026-05-08 | Discharge date: 2026-05-11\nDiagnosis: Aftercare following right total hip replacement. ICD-10: Z47.1; presence of right artificial hip joint Z96.641.\nMedications: Acetaminophen 650 mg by mouth every 6 hours as needed; avoid alcohol and do not exceed the daily limit. Oxycodone 5 mg by mouth every 6 hours as needed for severe pain; take with food, avoid alcohol, and do not drive. Aspirin 81 mg by mouth twice daily for blood clot prevention; take with food and avoid extra NSAIDs unless surgeon approves. Senna-docusate 8.6/50 mg by mouth nightly while using opioids; take with water and fiber.\nUpcoming appointments: Orthopedic surgery wound check in 10-14 days. Outpatient physical therapy twice weekly starting this week.\nGo to the ER now for: chest pain or sudden breathing trouble, one calf becoming very painful/swollen, inability to bear weight after a pop or fall, uncontrolled bleeding, or fever over 101.5 F with pus from incision.\nCall the doctor within 24 hours for: increasing incision redness/warmth/drainage, pain that is worsening despite medicine, constipation over 3 days, or low-grade fever.\nDiet/activity: high-protein meals, fluids and fiber, weight bearing as tolerated with walker, follow hip precautions, no driving while taking opioid pain medicine.",
+"checkin_response": {
+"day": 7,
+"medications_taken": {
+"Acetaminophen": true,
+"Oxycodone": true,
+"Aspirin": true,
+"Senna-docusate": true
+},
+"free_text_concern": "First week milestone went fine. I can get from the bed to the chair with the walker and the pain stays manageable if I ice afterward.",
+"pain_score_0_10": 3,
+"other_fields": {
+"incision": "dry",
+"pt_exercises_done": true,
+"temperature_f": 98.6,
+"bowel_movement_today": true
+}
+},
+"prior_checkin_history": [],
+"expected_classification": "GREEN",
+"expected_escalation_tier": "NONE"
+},
+{
+"case_id": "H12",
+"discharge_summary_text": "DISCHARGE SUMMARY - EXTRACTED PDF TEXT\nPatient: Thomas Patel | Age: 55 | Sex: male\nHospital: St. Anne Medical Pavilion\nAttending physician: Dr. Priya Shah | Specialty: Endocrinology\nAdmit date: 2026-05-10 | Discharge date: 2026-05-12\nDiagnosis: Type 2 diabetes mellitus with recent hyperglycemia, improved before discharge. ICD-10: E11.65.\nMedications: Metformin 500 mg by mouth twice daily with meals; avoid excess alcohol. Insulin glargine 18 units subcutaneously at bedtime; keep meal pattern consistent and do not skip meals without clinician advice. Empagliflozin 10 mg by mouth every morning; may take with or without food and drink adequate water. Atorvastatin 20 mg by mouth nightly; avoid large amounts of grapefruit.\nUpcoming appointments: Primary care diabetes follow-up in 1 week with glucose log. Diabetes educator appointment in 2 weeks for meter and insulin pen review.\nGo to the ER now for: blood sugar over 400 with vomiting or severe weakness, severe low sugar with confusion or passing out, chest pain, rapid deep breathing or fruity breath, or signs of severe dehydration.\nCall the doctor within 24 hours for: repeated glucose readings above 250 or below 70, uncertainty about medication dosing, new infected wound, or inability to keep fluids down.\nDiet/activity: consistent carbohydrate meals, check glucose as instructed, carry quick sugar source, walk daily as tolerated, avoid skipping meals.",
+"checkin_response": {
+"day": 10,
+"medications_taken": {
+"Metformin": true,
+"Insulin glargine": true,
+"Empagliflozin": true,
+"Atorvastatin": true
+},
+"free_text_concern": "Routine check-in. I took my medicine, logged my sugars, ate regular meals, and I do not feel shaky or unusually thirsty.",
+"fasting_glucose_mg_dl": 118,
+"other_fields": {
+"post_meal_glucose_mg_dl": 146,
+"hypoglycemia_symptoms": false,
+"medication_questions": false
+}
+},
+"prior_checkin_history": [],
+"expected_classification": "GREEN",
+"expected_escalation_tier": "NONE"
+},
+{
+"case_id": "H13",
+"discharge_summary_text": "DISCHARGE SUMMARY - EXTRACTED PDF TEXT\nPatient: Nadine Cole | Age: 61 | Sex: female\nHospital: Cedar Valley Hospital\nAttending physician: Dr. Elena Morris | Specialty: Cardiology\nAdmit date: 2026-05-09 | Discharge date: 2026-05-13\nDiagnosis: Acute on chronic congestive heart failure, clinically improved. ICD-10: I50.9.\nMedications: Furosemide 40 mg by mouth every morning; may take with food, avoid high-salt meals. Lisinopril 10 mg by mouth daily; avoid potassium salt substitutes unless approved. Metoprolol succinate 25 mg by mouth daily with or right after food. Potassium chloride 20 mEq by mouth daily; take with food and water, avoid extra potassium supplements unless prescribed.\nUpcoming appointments: Cardiology clinic in 7 days for weight and medication review. Primary care follow-up in 10-14 days with lab check.\nGo to the ER now for: severe trouble getting air while resting, chest pressure or pain, fainting or new confusion, blue/gray lips, or coughing pink frothy mucus.\nCall the doctor within 24 hours for: weight gain of 2 pounds in one day or 5 pounds in a week, new or worse ankle/leg swelling, or needing extra pillows to sleep.\nDiet/activity: 2 gram sodium diet, fluid limit 2 liters/day unless changed by cardiology, weigh every morning, walk short distances and rest when tired.",
+"checkin_response": {
+"day": 9,
+"medications_taken": {
+"Furosemide": true,
+"Lisinopril": true,
+"Metoprolol succinate": true,
+"Potassium chloride": true
+},
+"free_text_concern": "My weight is only half a pound higher than yesterday, which seems like normal up and down. No swelling, no extra pillows, and I took all medications.",
+"weight_lbs": 188.6,
+"other_fields": {
+"yesterday_weight_lbs": 188.1,
+"change_since_yesterday_lbs": 0.5,
+"ankle_swelling": "none",
+"sleeping_pillows": 2
+}
+},
+"prior_checkin_history": [],
+"expected_classification": "GREEN",
+"expected_escalation_tier": "NONE"
+},
+{
+"case_id": "H14",
+"discharge_summary_text": "DISCHARGE SUMMARY - EXTRACTED PDF TEXT\nPatient: Henry Sullivan | Age: 73 | Sex: male\nHospital: Brookfield General Hospital\nAttending physician: Dr. Nathan Bell | Specialty: Internal Medicine\nAdmit date: 2026-05-11 | Discharge date: 2026-05-14\nDiagnosis: Community-acquired pneumonia, clinically improving. ICD-10: J18.9.\nMedications: Amoxicillin-clavulanate 875/125 mg by mouth twice daily until finished; take with food. Azithromycin 250 mg by mouth daily until finished; may take with food if stomach upset and avoid antacids within 2 hours. Acetaminophen 650 mg by mouth every 6 hours as needed for fever; avoid alcohol and stay within daily limit. Guaifenesin 600 mg by mouth twice daily with a full glass of water; no major food interaction.\nUpcoming appointments: Primary care follow-up in 5-7 days. Repeat chest x-ray in 4-6 weeks if ordered.\nGo to the ER now for: severe breathing trouble, fever 103 F or higher, chest pain, confusion, blue lips, coughing blood, or oxygen saturation below 90% if checked.\nCall the doctor within 24 hours for: fever over 100.4 F after 48 hours on antibiotics, worsening cough or sputum, medication side effects, or not being able to drink fluids.\nDiet/activity: drink fluids, eat small protein-rich meals, avoid smoke, use incentive spirometer if provided, rest with gradual walking as energy returns.",
+"checkin_response": {
+"day": 5,
+"medications_taken": {
+"Amoxicillin-clavulanate": true,
+"Azithromycin": true,
+"Acetaminophen": true,
+"Guaifenesin": true
+},
+"free_text_concern": "Energy is coming back. I still nap in the afternoon, but my temperature is normal and the cough is less harsh.",
+"temperature_f": 98.9,
+"oxygen_saturation_percent": 95,
+"other_fields": {
+"cough": "improving",
+"sputum": "small amount clear",
+"appetite": "better"
+}
+},
+"prior_checkin_history": [],
+"expected_classification": "GREEN",
+"expected_escalation_tier": "NONE"
+},
+{
+"case_id": "H15",
+"discharge_summary_text": "DISCHARGE SUMMARY - EXTRACTED PDF TEXT\nPatient: Iris Bennett | Age: 67 | Sex: female\nHospital: Harborview District Hospital\nAttending physician: Dr. Peter Lang | Specialty: Pulmonology\nAdmit date: 2026-05-12 | Discharge date: 2026-05-15\nDiagnosis: Chronic obstructive pulmonary disease exacerbation, improved at discharge. ICD-10: J44.1.\nMedications: Tiotropium 18 mcg inhaled once daily; no food interaction. Albuterol HFA 2 puffs every 4-6 hours as needed; no food interaction, rinse mouth if shaky or dry. Prednisone 20 mg by mouth daily for 5 days; take with food and avoid excess alcohol. Azithromycin 250 mg by mouth daily until finished; may take with food if stomach upset and avoid antacids within 2 hours.\nUpcoming appointments: Pulmonology follow-up in 1 week. Primary care visit in 2 weeks; bring inhalers to visit.\nGo to the ER now for: severe breathing trouble not relieved by rescue inhaler, blue lips or fingernails, chest pain, fainting, confusion, or oxygen saturation persistently below 90% if checked.\nCall the doctor within 24 hours for: increased cough or change in sputum color, fever over 100.4 F, needing rescue inhaler more often than usual, or uncertainty about inhaler use.\nDiet/activity: drink fluids unless restricted, small frequent meals, no smoking or vaping, use pursed-lip breathing, walk slowly and rest between activities.",
+"checkin_response": {
+"day": 28,
+"medications_taken": {
+"Tiotropium": true,
+"Albuterol HFA": true,
+"Prednisone": true,
+"Azithromycin": true
+},
+"free_text_concern": "Almost back to my usual routine. I took my inhaler, walked slowly outside, and did not have any new breathing trouble.",
+"oxygen_saturation_percent": 96,
+"rescue_inhaler_uses": 0,
+"other_fields": {
+"green_streak_days": 10,
+"temperature_f": 98.0,
+"sputum": "usual clear"
+}
+},
+"prior_checkin_history": [],
+"expected_classification": "GREEN",
+"expected_escalation_tier": "NONE"
+},
+{
+"case_id": "E01",
+"discharge_summary_text": "DISCHARGE SUMMARY - EXTRACTED PDF TEXT\nPatient: Victor Alvarez | Age: 75 | Sex: male\nHospital: Maple Ridge Medical Center\nAttending physician: Dr. Elena Morris | Specialty: Cardiology\nAdmit date: 2026-05-12 | Discharge date: 2026-05-16\nDiagnosis: Acute on chronic congestive heart failure, clinically improved. ICD-10: I50.9.\nMedications: Furosemide 40 mg by mouth every morning; may take with food, avoid high-salt meals. Lisinopril 10 mg by mouth daily; avoid potassium salt substitutes unless approved. Metoprolol succinate 25 mg by mouth daily with or right after food. Potassium chloride 20 mEq by mouth daily; take with food and water, avoid extra potassium supplements unless prescribed.\nUpcoming appointments: Cardiology clinic in 7 days for weight and medication review. Primary care follow-up in 10-14 days with lab check.\nGo to the ER now for: severe trouble getting air while resting, chest pressure or pain, fainting or new confusion, blue/gray lips, or coughing pink frothy mucus.\nCall the doctor within 24 hours for: weight gain of 2 pounds in one day or 5 pounds in a week, new or worse ankle/leg swelling, or needing extra pillows to sleep.\nDiet/activity: 2 gram sodium diet, fluid limit 2 liters/day unless changed by cardiology, weigh every morning, walk short distances and rest when tired.",
+"checkin_response": {
+"day": 3,
+"medications_taken": {
+"Furosemide": false,
+"Lisinopril": true,
+"Metoprolol succinate": true,
+"Potassium chloride": true
+},
+"free_text_concern": "I missed the water pill this morning because I left before breakfast, but I took the other heart medicines. I feel okay and my weight is not up, but I wanted to report the missed dose.",
+"weight_lbs": 202.0,
+"other_fields": {
+"baseline_discharge_weight_lbs": 202.1,
+"missed_reason": "left home before dose",
+"ankle_swelling": "none",
+"sleeping_pillows": 2
+}
+},
+"prior_checkin_history": [],
+"expected_classification": "YELLOW",
+"expected_escalation_tier": "TIER_1"
+},
+{
+"case_id": "E02",
+"discharge_summary_text": "DISCHARGE SUMMARY - EXTRACTED PDF TEXT\nPatient: Joanne Ellis | Age: 62 | Sex: female\nHospital: Riverview Medical Center\nAttending physician: Dr. Peter Lang | Specialty: Pulmonology\nAdmit date: 2026-05-14 | Discharge date: 2026-05-17\nDiagnosis: Chronic obstructive pulmonary disease exacerbation, improved at discharge. ICD-10: J44.1.\nMedications: Tiotropium 18 mcg inhaled once daily; no food interaction. Albuterol HFA 2 puffs every 4-6 hours as needed; no food interaction, rinse mouth if shaky or dry. Prednisone 20 mg by mouth daily for 5 days; take with food and avoid excess alcohol. Azithromycin 250 mg by mouth daily until finished; may take with food if stomach upset and avoid antacids within 2 hours.\nUpcoming appointments: Pulmonology follow-up in 1 week. Primary care visit in 2 weeks; bring inhalers to visit.\nGo to the ER now for: severe breathing trouble not relieved by rescue inhaler, blue lips or fingernails, chest pain, fainting, confusion, or oxygen saturation persistently below 90% if checked.\nCall the doctor within 24 hours for: increased cough or change in sputum color, fever over 100.4 F, needing rescue inhaler more often than usual, or uncertainty about inhaler use.\nDiet/activity: drink fluids unless restricted, small frequent meals, no smoking or vaping, use pursed-lip breathing, walk slowly and rest between activities.",
+"checkin_response": {
+"day": 5,
+"medications_taken": {
+"Tiotropium": true,
+"Albuterol HFA": true,
+"Prednisone": true,
+"Azithromycin": true
+},
+"free_text_concern": "My cough is a little more annoying today than yesterday, mostly in the morning. The mucus still looks clear, I do not have a fever, and the rescue inhaler helped after one use.",
+"oxygen_saturation_percent": 94,
+"rescue_inhaler_uses": 1,
+"other_fields": {
+"sputum": "clear",
+"temperature_f": 98.8,
+"activity": "normal indoor walking"
+}
+},
+"prior_checkin_history": [],
+"expected_classification": "YELLOW",
+"expected_escalation_tier": "TIER_1"
+},
+{
+"case_id": "E03",
+"discharge_summary_text": "DISCHARGE SUMMARY - EXTRACTED PDF TEXT\nPatient: Ruth Kim | Age: 80 | Sex: female\nHospital: Lakeside Regional Hospital\nAttending physician: Dr. Elena Morris | Specialty: Cardiology\nAdmit date: 2026-05-14 | Discharge date: 2026-05-18\nDiagnosis: Acute on chronic congestive heart failure, clinically improved. ICD-10: I50.9.\nMedications: Furosemide 40 mg by mouth every morning; may take with food, avoid high-salt meals. Lisinopril 10 mg by mouth daily; avoid potassium salt substitutes unless approved. Metoprolol succinate 25 mg by mouth daily with or right after food. Potassium chloride 20 mEq by mouth daily; take with food and water, avoid extra potassium supplements unless prescribed.\nUpcoming appointments: Cardiology clinic in 7 days for weight and medication review. Primary care follow-up in 10-14 days with lab check.\nGo to the ER now for: severe trouble getting air while resting, chest pressure or pain, fainting or new confusion, blue/gray lips, or coughing pink frothy mucus.\nCall the doctor within 24 hours for: weight gain of 2 pounds in one day or 5 pounds in a week, new or worse ankle/leg swelling, or needing extra pillows to sleep.\nDiet/activity: 2 gram sodium diet, fluid limit 2 liters/day unless changed by cardiology, weigh every morning, walk short distances and rest when tired.",
+"checkin_response": {
+"day": 4,
+"medications_taken": {
+"Furosemide": true,
+"Lisinopril": true,
+"Metoprolol succinate": true,
+"Potassium chloride": true
+},
+"free_text_concern": "My weight is up about a pound and a half from yesterday. I do not feel worse and my ankles look about the same, but the change made me wonder if I should watch it.",
+"weight_lbs": 166.7,
+"other_fields": {
+"yesterday_weight_lbs": 165.2,
+"change_since_yesterday_lbs": 1.5,
+"ankle_swelling": "unchanged mild",
+"sleeping_pillows": 2
+}
+},
+"prior_checkin_history": [],
+"expected_classification": "YELLOW",
+"expected_escalation_tier": "TIER_1"
+},
+{
+"case_id": "E04",
+"discharge_summary_text": "DISCHARGE SUMMARY - EXTRACTED PDF TEXT\nPatient: Calvin Morgan | Age: 59 | Sex: male\nHospital: Northgate Community Hospital\nAttending physician: Dr. Sara Whitman | Specialty: Orthopedic Surgery\nAdmit date: 2026-05-16 | Discharge date: 2026-05-19\nDiagnosis: Aftercare following right total hip replacement. ICD-10: Z47.1; presence of right artificial hip joint Z96.641.\nMedications: Acetaminophen 650 mg by mouth every 6 hours as needed; avoid alcohol and do not exceed the daily limit. Oxycodone 5 mg by mouth every 6 hours as needed for severe pain; take with food, avoid alcohol, and do not drive. Aspirin 81 mg by mouth twice daily for blood clot prevention; take with food and avoid extra NSAIDs unless surgeon approves. Senna-docusate 8.6/50 mg by mouth nightly while using opioids; take with water and fiber.\nUpcoming appointments: Orthopedic surgery wound check in 10-14 days. Outpatient physical therapy twice weekly starting this week.\nGo to the ER now for: chest pain or sudden breathing trouble, one calf becoming very painful/swollen, inability to bear weight after a pop or fall, uncontrolled bleeding, or fever over 101.5 F with pus from incision.\nCall the doctor within 24 hours for: increasing incision redness/warmth/drainage, pain that is worsening despite medicine, constipation over 3 days, or low-grade fever.\nDiet/activity: high-protein meals, fluids and fiber, weight bearing as tolerated with walker, follow hip precautions, no driving while taking opioid pain medicine.",
+"checkin_response": {
+"day": 4,
+"medications_taken": {
+"Acetaminophen": true,
+"Oxycodone": true,
+"Aspirin": true,
+"Senna-docusate": true
+},
+"free_text_concern": "The hip pain is a little worse than yesterday, maybe a 5 instead of a 3, but there is no new redness, no drainage, and my calf is not swollen. I may have overdone walking.",
+"pain_score_0_10": 5,
+"other_fields": {
+"yesterday_pain_score_0_10": 3,
+"incision": "dry, no new redness",
+"calf_pain": "none",
+"pt_exercises_done": true
+}
+},
+"prior_checkin_history": [],
+"expected_classification": "YELLOW",
+"expected_escalation_tier": "TIER_1"
+},
+{
+"case_id": "E05",
+"discharge_summary_text": "DISCHARGE SUMMARY - EXTRACTED PDF TEXT\nPatient: Angela Price | Age: 52 | Sex: female\nHospital: St. Anne Medical Pavilion\nAttending physician: Dr. Priya Shah | Specialty: Endocrinology\nAdmit date: 2026-05-18 | Discharge date: 2026-05-20\nDiagnosis: Type 2 diabetes mellitus with recent hyperglycemia, improved before discharge. ICD-10: E11.65.\nMedications: Metformin 500 mg by mouth twice daily with meals; avoid excess alcohol. Insulin glargine 18 units subcutaneously at bedtime; keep meal pattern consistent and do not skip meals without clinician advice. Empagliflozin 10 mg by mouth every morning; may take with or without food and drink adequate water. Atorvastatin 20 mg by mouth nightly; avoid large amounts of grapefruit.\nUpcoming appointments: Primary care diabetes follow-up in 1 week with glucose log. Diabetes educator appointment in 2 weeks for meter and insulin pen review.\nGo to the ER now for: blood sugar over 400 with vomiting or severe weakness, severe low sugar with confusion or passing out, chest pain, rapid deep breathing or fruity breath, or signs of severe dehydration.\nCall the doctor within 24 hours for: repeated glucose readings above 250 or below 70, uncertainty about medication dosing, new infected wound, or inability to keep fluids down.\nDiet/activity: consistent carbohydrate meals, check glucose as instructed, carry quick sugar source, walk daily as tolerated, avoid skipping meals.",
+"checkin_response": {
+"day": 6,
+"medications_taken": {
+"Metformin": true,
+"Insulin glargine": true,
+"Empagliflozin": true,
+"Atorvastatin": true
+},
+"free_text_concern": "My after-lunch sugar was higher than I expected, and I am not completely sure I dialed the insulin pen right last night even though I thought I did. I feel okay otherwise.",
+"fasting_glucose_mg_dl": 164,
+"other_fields": {
+"post_meal_glucose_mg_dl": 238,
+"hypoglycemia_symptoms": false,
+"medication_uncertainty": "unsure insulin pen was set correctly"
+}
+},
+"prior_checkin_history": [],
+"expected_classification": "YELLOW",
+"expected_escalation_tier": "TIER_1"
+},
+{
+"case_id": "E06",
+"discharge_summary_text": "DISCHARGE SUMMARY - EXTRACTED PDF TEXT\nPatient: Owen Fields | Age: 70 | Sex: male\nHospital: Cedar Valley Hospital\nAttending physician: Dr. Elena Morris | Specialty: Cardiology\nAdmit date: 2026-05-17 | Discharge date: 2026-05-21\nDiagnosis: Acute on chronic congestive heart failure, clinically improved. ICD-10: I50.9.\nMedications: Furosemide 40 mg by mouth every morning; may take with food, avoid high-salt meals. Lisinopril 10 mg by mouth daily; avoid potassium salt substitutes unless approved. Metoprolol succinate 25 mg by mouth daily with or right after food. Potassium chloride 20 mEq by mouth daily; take with food and water, avoid extra potassium supplements unless prescribed.\nUpcoming appointments: Cardiology clinic in 7 days for weight and medication review. Primary care follow-up in 10-14 days with lab check.\nGo to the ER now for: severe trouble getting air while resting, chest pressure or pain, fainting or new confusion, blue/gray lips, or coughing pink frothy mucus.\nCall the doctor within 24 hours for: weight gain of 2 pounds in one day or 5 pounds in a week, new or worse ankle/leg swelling, or needing extra pillows to sleep.\nDiet/activity: 2 gram sodium diet, fluid limit 2 liters/day unless changed by cardiology, weigh every morning, walk short distances and rest when tired.",
+"checkin_response": {
+"day": 5,
+"medications_taken": {
+"Furosemide": true,
+"Lisinopril": true,
+"Metoprolol succinate": true,
+"Potassium chloride": true
+},
+"free_text_concern": "I got a little short of breath when I carried laundry, but I get this sometimes and it settled after I sat down. It is not happening while I am resting, and I do not have chest discomfort.",
+"weight_lbs": 191.2,
+"other_fields": {
+"baseline_discharge_weight_lbs": 191.0,
+"trigger": "carrying laundry",
+"resolved_with_rest": true,
+"ankle_swelling": "none",
+"sleeping_pillows": 2
+}
+},
+"prior_checkin_history": [],
+"expected_classification": "YELLOW",
+"expected_escalation_tier": "TIER_1"
+},
+{
+"case_id": "E07",
+"discharge_summary_text": "DISCHARGE SUMMARY - EXTRACTED PDF TEXT\nPatient: Melanie Howard | Age: 68 | Sex: female\nHospital: Brookfield General Hospital\nAttending physician: Dr. Peter Lang | Specialty: Pulmonology\nAdmit date: 2026-05-19 | Discharge date: 2026-05-22\nDiagnosis: Chronic obstructive pulmonary disease exacerbation, improved at discharge. ICD-10: J44.1.\nMedications: Tiotropium 18 mcg inhaled once daily; no food interaction. Albuterol HFA 2 puffs every 4-6 hours as needed; no food interaction, rinse mouth if shaky or dry. Prednisone 20 mg by mouth daily for 5 days; take with food and avoid excess alcohol. Azithromycin 250 mg by mouth daily until finished; may take with food if stomach upset and avoid antacids within 2 hours.\nUpcoming appointments: Pulmonology follow-up in 1 week. Primary care visit in 2 weeks; bring inhalers to visit.\nGo to the ER now for: severe breathing trouble not relieved by rescue inhaler, blue lips or fingernails, chest pain, fainting, confusion, or oxygen saturation persistently below 90% if checked.\nCall the doctor within 24 hours for: increased cough or change in sputum color, fever over 100.4 F, needing rescue inhaler more often than usual, or uncertainty about inhaler use.\nDiet/activity: drink fluids unless restricted, small frequent meals, no smoking or vaping, use pursed-lip breathing, walk slowly and rest between activities.",
+"checkin_response": {
+"day": 7,
+"medications_taken": {
+"Tiotropium": true,
+"Albuterol HFA": true,
+"Prednisone": true,
+"Azithromycin": true
+},
+"free_text_concern": "I am confused about which inhaler is the everyday one and which one is the quick-help one. I took both today, but I need someone to explain the order again.",
+"oxygen_saturation_percent": 95,
+"rescue_inhaler_uses": 2,
+"other_fields": {
+"sputum": "usual clear",
+"temperature_f": 98.5,
+"inhaler_question": true
+}
+},
+"prior_checkin_history": [],
+"expected_classification": "YELLOW",
+"expected_escalation_tier": "TIER_1"
+},
+{
+"case_id": "E08",
+"discharge_summary_text": "DISCHARGE SUMMARY - EXTRACTED PDF TEXT\nPatient: Franklin Davis | Age: 76 | Sex: male\nHospital: Harborview District Hospital\nAttending physician: Dr. Elena Morris | Specialty: Cardiology\nAdmit date: 2026-05-19 | Discharge date: 2026-05-23\nDiagnosis: Acute on chronic congestive heart failure, clinically improved. ICD-10: I50.9.\nMedications: Furosemide 40 mg by mouth every morning; may take with food, avoid high-salt meals. Lisinopril 10 mg by mouth daily; avoid potassium salt substitutes unless approved. Metoprolol succinate 25 mg by mouth daily with or right after food. Potassium chloride 20 mEq by mouth daily; take with food and water, avoid extra potassium supplements unless prescribed.\nUpcoming appointments: Cardiology clinic in 7 days for weight and medication review. Primary care follow-up in 10-14 days with lab check.\nGo to the ER now for: severe trouble getting air while resting, chest pressure or pain, fainting or new confusion, blue/gray lips, or coughing pink frothy mucus.\nCall the doctor within 24 hours for: weight gain of 2 pounds in one day or 5 pounds in a week, new or worse ankle/leg swelling, or needing extra pillows to sleep.\nDiet/activity: 2 gram sodium diet, fluid limit 2 liters/day unless changed by cardiology, weigh every morning, walk short distances and rest when tired.",
+"checkin_response": {
+"day": 6,
+"medications_taken": {
+"Furosemide": true,
+"Lisinopril": true,
+"Metoprolol succinate": true,
+"Potassium chloride": true
+},
+"free_text_concern": "Today is the third day in a row that I am not quite right. My ankles still look a bit full and my weight is creeping, but I am not having any emergency symptoms.",
+"weight_lbs": 213.6,
+"other_fields": {
+"yesterday_weight_lbs": 212.4,
+"change_since_yesterday_lbs": 1.2,
+"ankle_swelling": "mild",
+"sleeping_pillows": 2,
+"consecutive_yellow_day_count_including_today": 3
+}
+},
+"prior_checkin_history": [
+{
+"day": 4,
+"medications_taken": {
+"Furosemide": true,
+"Lisinopril": true,
+"Metoprolol succinate": true,
+"Potassium chloride": true
+},
+"free_text_concern": "My ankles look a little fuller than yesterday and my weight is up about a pound. I feel okay otherwise and can sleep flat with my usual pillows.",
+"weight_lbs": 211.1,
+"other_fields": {
+"yesterday_weight_lbs": 210.0,
+"change_since_yesterday_lbs": 1.1,
+"ankle_swelling": "mild",
+"sleeping_pillows": 2
+},
+"expected_classification": "YELLOW",
+"expected_escalation_tier": "TIER_1"
+},
+{
+"day": 5,
+"medications_taken": {
+"Furosemide": false,
+"Lisinopril": true,
+"Metoprolol succinate": true,
+"Potassium chloride": true
+},
+"free_text_concern": "I missed the morning water pill because I forgot it before church. My weight is up a little again, but no severe symptoms.",
+"weight_lbs": 212.4,
+"other_fields": {
+"yesterday_weight_lbs": 211.1,
+"change_since_yesterday_lbs": 1.3,
+"ankle_swelling": "mild",
+"sleeping_pillows": 2
+},
+"expected_classification": "YELLOW",
+"expected_escalation_tier": "TIER_1"
+}
+],
+"expected_classification": "RED",
+"expected_escalation_tier": "TIER_2"
+},
+{
+"case_id": "E09",
+"discharge_summary_text": "DISCHARGE SUMMARY - EXTRACTED PDF TEXT\nPatient: Lillian Moore | Age: 64 | Sex: female\nHospital: Maple Ridge Medical Center\nAttending physician: Dr. Nathan Bell | Specialty: Internal Medicine\nAdmit date: 2026-05-21 | Discharge date: 2026-05-24\nDiagnosis: Community-acquired pneumonia, clinically improving. ICD-10: J18.9.\nMedications: Amoxicillin-clavulanate 875/125 mg by mouth twice daily until finished; take with food. Azithromycin 250 mg by mouth daily until finished; may take with food if stomach upset and avoid antacids within 2 hours. Acetaminophen 650 mg by mouth every 6 hours as needed for fever; avoid alcohol and stay within daily limit. Guaifenesin 600 mg by mouth twice daily with a full glass of water; no major food interaction.\nUpcoming appointments: Primary care follow-up in 5-7 days. Repeat chest x-ray in 4-6 weeks if ordered.\nGo to the ER now for: severe breathing trouble, fever 103 F or higher, chest pain, confusion, blue lips, coughing blood, or oxygen saturation below 90% if checked.\nCall the doctor within 24 hours for: fever over 100.4 F after 48 hours on antibiotics, worsening cough or sputum, medication side effects, or not being able to drink fluids.\nDiet/activity: drink fluids, eat small protein-rich meals, avoid smoke, use incentive spirometer if provided, rest with gradual walking as energy returns.",
+"checkin_response": {
+"day": 3,
+"medications_taken": {
+"Amoxicillin-clavulanate": true,
+"Azithromycin": true,
+"Acetaminophen": true,
+"Guaifenesin": true
+},
+"free_text_concern": "I have a mild fever this afternoon, 100.6, but I am drinking fluids and the cough is not worse. I do not feel like I need the ER, just wanted to report it.",
+"temperature_f": 100.6,
+"oxygen_saturation_percent": 95,
+"other_fields": {
+"cough": "same as yesterday",
+"sputum": "small yellow amount",
+"fluids": "able to drink"
+}
+},
+"prior_checkin_history": [],
+"expected_classification": "YELLOW",
+"expected_escalation_tier": "TIER_1"
+},
+{
+"case_id": "F01",
+"discharge_summary_text": "DISCHARGE SUMMARY - EXTRACTED PDF TEXT\nPatient: Beatrice Thompson | Age: 79 | Sex: female\nHospital: Riverview Medical Center\nAttending physician: Dr. Elena Morris | Specialty: Cardiology\nAdmit date: 2026-05-21 | Discharge date: 2026-05-25\nDiagnosis: Acute on chronic congestive heart failure, clinically improved. ICD-10: I50.9.\nMedications: Furosemide 40 mg by mouth every morning; may take with food, avoid high-salt meals. Lisinopril 10 mg by mouth daily; avoid potassium salt substitutes unless approved. Metoprolol succinate 25 mg by mouth daily with or right after food. Potassium chloride 20 mEq by mouth daily; take with food and water, avoid extra potassium supplements unless prescribed.\nUpcoming appointments: Cardiology clinic in 7 days for weight and medication review. Primary care follow-up in 10-14 days with lab check.\nGo to the ER now for: severe trouble getting air while resting, chest pressure or pain, fainting or new confusion, blue/gray lips, or coughing pink frothy mucus.\nCall the doctor within 24 hours for: weight gain of 2 pounds in one day or 5 pounds in a week, new or worse ankle/leg swelling, or needing extra pillows to sleep.\nDiet/activity: 2 gram sodium diet, fluid limit 2 liters/day unless changed by cardiology, weigh every morning, walk short distances and rest when tired.",
+"checkin_response": {
+"day": 4,
+"medications_taken": {
+"Furosemide": true,
+"Lisinopril": true,
+"Metoprolol succinate": true,
+"Potassium chloride": true
+},
+"free_text_concern": "I feel like I am suffocating even while sitting still. I have to lean forward to get any air, and my lips look gray in the mirror.",
+"weight_lbs": 190.8,
+"other_fields": {
+"baseline_discharge_weight_lbs": 188.9,
+"ankle_swelling": "worse than yesterday",
+"position": "leaning forward at rest",
+"appearance": "gray lips reported"
+}
+},
+"prior_checkin_history": [],
+"expected_classification": "RED",
+"expected_escalation_tier": "TIER_3"
+},
+{
+"case_id": "F02",
+"discharge_summary_text": "DISCHARGE SUMMARY - EXTRACTED PDF TEXT\nPatient: Harold Jenkins | Age: 73 | Sex: male\nHospital: Lakeside Regional Hospital\nAttending physician: Dr. Elena Morris | Specialty: Cardiology\nAdmit date: 2026-05-22 | Discharge date: 2026-05-26\nDiagnosis: Acute on chronic congestive heart failure, clinically improved. ICD-10: I50.9.\nMedications: Furosemide 40 mg by mouth every morning; may take with food, avoid high-salt meals. Lisinopril 10 mg by mouth daily; avoid potassium salt substitutes unless approved. Metoprolol succinate 25 mg by mouth daily with or right after food. Potassium chloride 20 mEq by mouth daily; take with food and water, avoid extra potassium supplements unless prescribed.\nUpcoming appointments: Cardiology clinic in 7 days for weight and medication review. Primary care follow-up in 10-14 days with lab check.\nGo to the ER now for: severe trouble getting air while resting, chest pressure or pain, fainting or new confusion, blue/gray lips, or coughing pink frothy mucus.\nCall the doctor within 24 hours for: weight gain of 2 pounds in one day or 5 pounds in a week, new or worse ankle/leg swelling, or needing extra pillows to sleep.\nDiet/activity: 2 gram sodium diet, fluid limit 2 liters/day unless changed by cardiology, weigh every morning, walk short distances and rest when tired.",
+"checkin_response": {
+"day": 7,
+"medications_taken": {
+"Furosemide": true,
+"Lisinopril": true,
+"Metoprolol succinate": true,
+"Potassium chloride": true
+},
+"free_text_concern": "It feels like an elephant is sitting on the middle of my chest. The pressure is spreading into my left arm and I am sweaty and scared.",
+"weight_lbs": 205.2,
+"other_fields": {
+"baseline_discharge_weight_lbs": 204.7,
+"sweating": true,
+"radiation": "left arm",
+"symptom_onset": "20 minutes ago"
+}
+},
+"prior_checkin_history": [],
+"expected_classification": "RED",
+"expected_escalation_tier": "TIER_3"
+},
+{
+"case_id": "F03",
+"discharge_summary_text": "DISCHARGE SUMMARY - EXTRACTED PDF TEXT\nPatient: Sonia Ramos | Age: 60 | Sex: female\nHospital: Northgate Community Hospital\nAttending physician: Dr. Peter Lang | Specialty: Pulmonology\nAdmit date: 2026-05-24 | Discharge date: 2026-05-27\nDiagnosis: Chronic obstructive pulmonary disease exacerbation, improved at discharge. ICD-10: J44.1.\nMedications: Tiotropium 18 mcg inhaled once daily; no food interaction. Albuterol HFA 2 puffs every 4-6 hours as needed; no food interaction, rinse mouth if shaky or dry. Prednisone 20 mg by mouth daily for 5 days; take with food and avoid excess alcohol. Azithromycin 250 mg by mouth daily until finished; may take with food if stomach upset and avoid antacids within 2 hours.\nUpcoming appointments: Pulmonology follow-up in 1 week. Primary care visit in 2 weeks; bring inhalers to visit.\nGo to the ER now for: severe breathing trouble not relieved by rescue inhaler, blue lips or fingernails, chest pain, fainting, confusion, or oxygen saturation persistently below 90% if checked.\nCall the doctor within 24 hours for: increased cough or change in sputum color, fever over 100.4 F, needing rescue inhaler more often than usual, or uncertainty about inhaler use.\nDiet/activity: drink fluids unless restricted, small frequent meals, no smoking or vaping, use pursed-lip breathing, walk slowly and rest between activities.",
+"checkin_response": {
+"day": 6,
+"medications_taken": {
+"Tiotropium": true,
+"Albuterol HFA": true,
+"Prednisone": true,
+"Azithromycin": true
+},
+"free_text_concern": "I can't catch my breath at all after going to the bathroom, and the quick inhaler barely changed it. I am sitting upright and still struggling.",
+"oxygen_saturation_percent": 90,
+"rescue_inhaler_uses": 4,
+"other_fields": {
+"sputum": "usual amount",
+"temperature_f": 98.9,
+"relief_from_rescue_inhaler": "minimal"
+}
+},
+"prior_checkin_history": [],
+"expected_classification": "RED",
+"expected_escalation_tier": "TIER_2"
+},
+{
+"case_id": "F04",
+"discharge_summary_text": "DISCHARGE SUMMARY - EXTRACTED PDF TEXT\nPatient: George Wallace | Age: 82 | Sex: male\nHospital: St. Anne Medical Pavilion\nAttending physician: Dr. Elena Morris | Specialty: Cardiology\nAdmit date: 2026-05-24 | Discharge date: 2026-05-28\nDiagnosis: Acute on chronic congestive heart failure, clinically improved. ICD-10: I50.9.\nMedications: Furosemide 40 mg by mouth every morning; may take with food, avoid high-salt meals. Lisinopril 10 mg by mouth daily; avoid potassium salt substitutes unless approved. Metoprolol succinate 25 mg by mouth daily with or right after food. Potassium chloride 20 mEq by mouth daily; take with food and water, avoid extra potassium supplements unless prescribed.\nUpcoming appointments: Cardiology clinic in 7 days for weight and medication review. Primary care follow-up in 10-14 days with lab check.\nGo to the ER now for: severe trouble getting air while resting, chest pressure or pain, fainting or new confusion, blue/gray lips, or coughing pink frothy mucus.\nCall the doctor within 24 hours for: weight gain of 2 pounds in one day or 5 pounds in a week, new or worse ankle/leg swelling, or needing extra pillows to sleep.\nDiet/activity: 2 gram sodium diet, fluid limit 2 liters/day unless changed by cardiology, weigh every morning, walk short distances and rest when tired.",
+"checkin_response": {
+"day": 8,
+"medications_taken": {
+"Furosemide": true,
+"Lisinopril": true,
+"Metoprolol succinate": true,
+"Potassium chloride": true
+},
+"free_text_concern": "My legs are puffy around the socks today and the shoes feel tighter. I feel okay otherwise, no chest discomfort, and I can lie down like usual.",
+"weight_lbs": 178.9,
+"other_fields": {
+"yesterday_weight_lbs": 178.0,
+"change_since_yesterday_lbs": 0.9,
+"ankle_swelling": "patient says legs are puffy",
+"sleeping_pillows": 2
+}
+},
+"prior_checkin_history": [],
+"expected_classification": "YELLOW",
+"expected_escalation_tier": "TIER_1"
+},
+{
+"case_id": "A01",
+"discharge_summary_text": "DISCHARGE SUMMARY - EXTRACTED PDF TEXT\nPatient: Janet Cooper | Age: 69 | Sex: female\nHospital: Cedar Valley Hospital\nAttending physician: Dr. Elena Morris | Specialty: Cardiology\nAdmit date: 2026-05-25 | Discharge date: 2026-05-29\nDiagnosis: Acute on chronic congestive heart failure, clinically improved. ICD-10: I50.9.\nMedications: Furosemide 40 mg by mouth every morning; may take with food, avoid high-salt meals. Lisinopril 10 mg by mouth daily; avoid potassium salt substitutes unless approved. Metoprolol succinate 25 mg by mouth daily with or right after food. Potassium chloride 20 mEq by mouth daily; take with food and water, avoid extra potassium supplements unless prescribed.\nUpcoming appointments: Cardiology clinic in 7 days for weight and medication review. Primary care follow-up in 10-14 days with lab check.\nGo to the ER now for: severe trouble getting air while resting, chest pressure or pain, fainting or new confusion, blue/gray lips, or coughing pink frothy mucus.\nCall the doctor within 24 hours for: weight gain of 2 pounds in one day or 5 pounds in a week, new or worse ankle/leg swelling, or needing extra pillows to sleep.\nDiet/activity: 2 gram sodium diet, fluid limit 2 liters/day unless changed by cardiology, weigh every morning, walk short distances and rest when tired.",
+"checkin_response": {
+"day": 5,
+"medications_taken": {
+"Furosemide": true,
+"Lisinopril": true,
+"Metoprolol succinate": true,
+"Potassium chloride": true
+},
+"free_text_concern": "I do NOT have any chest pain today, feeling great. I took all my medicine, my weight is steady, and I do not have swelling or breathing problems.",
+"weight_lbs": 183.3,
+"other_fields": {
+"baseline_discharge_weight_lbs": 183.4,
+"ankle_swelling": "none",
+"sleeping_pillows": 2,
+"negation_test": true
+}
+},
+"prior_checkin_history": [],
+"expected_classification": "GREEN",
+"expected_escalation_tier": "NONE"
+},
+{
+"case_id": "A02",
+"discharge_summary_text": "DISCHARGE SUMMARY - EXTRACTED PDF TEXT\nPatient: Marcus Green | Age: 57 | Sex: male\nHospital: Brookfield General Hospital\nAttending physician: Dr. Elena Morris | Specialty: Cardiology\nAdmit date: 2026-05-26 | Discharge date: 2026-05-30\nDiagnosis: Acute on chronic congestive heart failure, clinically improved. ICD-10: I50.9.\nMedications: Furosemide 40 mg by mouth every morning; may take with food, avoid high-salt meals. Lisinopril 10 mg by mouth daily; avoid potassium salt substitutes unless approved. Metoprolol succinate 25 mg by mouth daily with or right after food. Potassium chloride 20 mEq by mouth daily; take with food and water, avoid extra potassium supplements unless prescribed.\nUpcoming appointments: Cardiology clinic in 7 days for weight and medication review. Primary care follow-up in 10-14 days with lab check.\nGo to the ER now for: severe trouble getting air while resting, chest pressure or pain, fainting or new confusion, blue/gray lips, or coughing pink frothy mucus.\nCall the doctor within 24 hours for: weight gain of 2 pounds in one day or 5 pounds in a week, new or worse ankle/leg swelling, or needing extra pillows to sleep.\nDiet/activity: 2 gram sodium diet, fluid limit 2 liters/day unless changed by cardiology, weigh every morning, walk short distances and rest when tired.",
+"checkin_response": {
+"day": 2,
+"medications_taken": {
+"Furosemide": true,
+"Lisinopril": true,
+"Metoprolol succinate": true,
+"Potassium chloride": true
+},
+"free_text_concern": "I can't breathe, my chest hurts, and I think I'm having a heart attack. This started suddenly and I feel clammy.",
+"weight_lbs": 224.0,
+"other_fields": {
+"onset": "sudden",
+"clammy": true,
+"patient_stated_heart_attack_concern": true
+}
+},
+"prior_checkin_history": [],
+"expected_classification": "RED",
+"expected_escalation_tier": "TIER_3"
+}
+]

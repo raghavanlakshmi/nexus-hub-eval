@@ -1,0 +1,77 @@
+[
+  {
+    "faithful": true,
+    "score": 0.96,
+    "invented_content": [],
+    "dose_changes": [],
+    "unsupported_warnings": [],
+    "reasoning": "All three medications in the schedule (Furosemide 40mg, Metoprolol succinate 25mg, Potassium chloride 20mEq) match the discharge doses exactly. Lisinopril was deliberately moved to needs_human_review, which is acceptable behavior. ER warning signs match the discharge verbatim, and call-doctor warnings are consistent. The two extra symptoms_to_watch items (fast/uneven heartbeat, dizziness on standing) are reasonable additions for these cardiac/diuretic medications and don't contradict the discharge, though they are not explicitly listed.",
+    "_judge_tokens": {
+      "in": 3615,
+      "out": 264
+    },
+    "template": "9defcf0bd135",
+    "diagnosis": "Acute on chronic congestive heart failure, clinically improved",
+    "example_case": "H01"
+  },
+  {
+    "faithful": true,
+    "score": 0.98,
+    "invented_content": [],
+    "dose_changes": [],
+    "unsupported_warnings": [],
+    "reasoning": "All four medications (Tiotropium 18 mcg, Albuterol HFA 2 puffs, Prednisone 20 mg, Azithromycin 250 mg) match the discharge summary doses and instructions exactly. The ER warning signs and symptoms-to-watch are directly traceable to the discharge, and appointments (Pulmonology in 1 week, Primary Care in 2 weeks with inhalers) are faithfully represented. Added reassurance, scheduling specifics, and the prudent 'do not take leftover tablets unless told' note are consistent rephrasings, not contradictions.",
+    "_judge_tokens": {
+      "in": 4031,
+      "out": 265
+    },
+    "template": "bcce66cc5fdc",
+    "diagnosis": "Chronic obstructive pulmonary disease exacerbation, improved at discharge",
+    "example_case": "H03"
+  },
+  {
+    "faithful": true,
+    "score": 0.97,
+    "invented_content": [],
+    "dose_changes": [],
+    "unsupported_warnings": [],
+    "reasoning": "All three medications in the schedule (Acetaminophen 650 mg q6h PRN, Aspirin 81 mg BID, Senna-docusate 8.6/50 mg nightly) match the discharge summary doses exactly. Oxycodone was appropriately moved to needs_human_review rather than omitted silently. ER warning signs and symptoms-to-watch are all traceable to the discharge summary, and the appointments (wound check in 10-14 days, twice-weekly PT) are consistent. Added scheduling specifics and reassurance do not contradict the source.",
+    "_judge_tokens": {
+      "in": 4139,
+      "out": 254
+    },
+    "template": "24c089fb099b",
+    "diagnosis": "Aftercare following right total hip replacement; presence of right artificial hip joint",
+    "example_case": "H05"
+  },
+  {
+    "faithful": true,
+    "score": 0.95,
+    "invented_content": [],
+    "dose_changes": [],
+    "unsupported_warnings": [],
+    "reasoning": "All medications in the schedule (insulin glargine 18 units, atorvastatin 20 mg nightly) match the discharge summary doses exactly, and Metformin and Empagliflozin were deliberately moved to needs_human_review rather than omitted silently. ER warning signs and symptoms-to-watch are all traceable to the discharge (BG >400 with vomiting/weakness, confusion/passing out, chest pain, fruity/deep breathing, dehydration, BG >250/<70, infected wound, inability to keep fluids down). Appointments and diet/activity advice are consistent with the source, with only acceptable rephrasing and scheduling specifics added.",
+    "_judge_tokens": {
+      "in": 3762,
+      "out": 286
+    },
+    "template": "1ce8f3b22e24",
+    "diagnosis": "Type 2 diabetes mellitus with recent hyperglycemia, improved before discharge",
+    "example_case": "H07"
+  },
+  {
+    "faithful": true,
+    "score": 0.96,
+    "invented_content": [],
+    "dose_changes": [],
+    "unsupported_warnings": [],
+    "reasoning": "All four medications in the schedule (amoxicillin-clavulanate 875/125 mg BID, azithromycin 250 mg daily, acetaminophen 650 mg q6h PRN, guaifenesin 600 mg BID) match the discharge summary doses exactly. ER warning signs and call-the-doctor symptoms are all traceable to the discharge, and appointments (PCP follow-up 5-7 days, repeat CXR 4-6 weeks) are accurate. The only minor additions (pneumonia/flu vaccine suggestion, mucus color guidance) are reasonable patient-education content that does not contradict the source and is appropriately framed as 'ask your doctor.'",
+    "_judge_tokens": {
+      "in": 3978,
+      "out": 296
+    },
+    "template": "e7f38fd4311b",
+    "diagnosis": "Community-acquired pneumonia, clinically improving",
+    "example_case": "H08"
+  }
+]

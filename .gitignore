@@ -1,0 +1,25 @@
+# secrets
+.env
+.env.*
+
+# python
+__pycache__/
+*.pyc
+venv/
+.venv/
+
+# run logs and backups
+*.log
+*_backup.json
+
+# regenerable outputs from an earlier run (rerun analyze_results.py to rebuild)
+eval_summary.md
+per_case_results.csv
+
+# Word exports and course-submission artifacts (Markdown versions are the source)
+*.docx
+~$*
+md_to_docx.py
+Loom_Walkthrough_Script.md
+SUBMISSION_CHECKLIST.md
+LANGSMITH_LINKS.md

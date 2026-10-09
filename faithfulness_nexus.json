@@ -1,0 +1,77 @@
+[
+  {
+    "faithful": true,
+    "score": 0.97,
+    "invented_content": [],
+    "dose_changes": [],
+    "unsupported_warnings": [],
+    "reasoning": "All three medications in the schedule (Furosemide 40mg, Metoprolol succinate 25mg, Potassium chloride 20mEq) match the discharge summary doses exactly. Lisinopril was deliberately moved to needs_human_review, which is acceptable behavior. ER warning signs and symptoms-to-watch are all traceable to the discharge summary, and added items (e.g. feeling more winded with light activity) are reasonable elaborations consistent with the discharge. Appointments and diet/activity instructions also align faithfully.",
+    "_judge_tokens": {
+      "in": 3894,
+      "out": 245
+    },
+    "template": "9defcf0bd135",
+    "diagnosis": "Acute on chronic congestive heart failure, clinically improved",
+    "example_case": "H01"
+  },
+  {
+    "faithful": true,
+    "score": 0.99,
+    "invented_content": [],
+    "dose_changes": [],
+    "unsupported_warnings": [],
+    "reasoning": "All four medications (Tiotropium 18 mcg, Albuterol HFA 2 puffs, Prednisone 20 mg, Azithromycin 250 mg) match the discharge summary in name and dose with correct food/timing instructions. ER warning signs and call-the-doctor symptoms are all directly traceable to the discharge text, and appointments (Pulmonology in 1 week, Primary care in 2 weeks with inhalers) are accurate. Added scheduling specifics and plain-language reassurances are acceptable and contradict nothing.",
+    "_judge_tokens": {
+      "in": 3786,
+      "out": 249
+    },
+    "template": "bcce66cc5fdc",
+    "diagnosis": "Chronic obstructive pulmonary disease exacerbation, improved at discharge",
+    "example_case": "H03"
+  },
+  {
+    "faithful": true,
+    "score": 0.97,
+    "invented_content": [],
+    "dose_changes": [],
+    "unsupported_warnings": [],
+    "reasoning": "All three medications in the schedule (Acetaminophen 650mg q6h, Aspirin 81mg BID, Senna-docusate 8.6/50mg nightly) match the discharge doses exactly. Oxycodone was deliberately moved to needs_human_review, which is acceptable behavior, not an omission. ER warning signs and symptoms-to-watch all trace directly to the discharge summary, and appointments (wound check 10-14 days, PT twice weekly) are accurate.",
+    "_judge_tokens": {
+      "in": 4069,
+      "out": 228
+    },
+    "template": "24c089fb099b",
+    "diagnosis": "Aftercare following right total hip replacement; presence of right artificial hip joint",
+    "example_case": "H05"
+  },
+  {
+    "faithful": true,
+    "score": 0.95,
+    "invented_content": [],
+    "dose_changes": [],
+    "unsupported_warnings": [],
+    "reasoning": "The medication_schedule includes only insulin glargine 18 units and atorvastatin 20 mg, both matching the discharge doses exactly. Metformin and empagliflozin were deliberately moved to needs_human_review, which is acceptable behavior. All ER warning signs, symptoms-to-watch, and appointments trace directly to the discharge summary with no invented content or dose alterations.",
+    "_judge_tokens": {
+      "in": 4097,
+      "out": 195
+    },
+    "template": "1ce8f3b22e24",
+    "diagnosis": "Type 2 diabetes mellitus with recent hyperglycemia, improved before discharge",
+    "example_case": "H07"
+  },
+  {
+    "faithful": true,
+    "score": 0.98,
+    "invented_content": [],
+    "dose_changes": [],
+    "unsupported_warnings": [],
+    "reasoning": "All four medications (amoxicillin-clavulanate 875/125 mg BID, azithromycin 250 mg daily, acetaminophen 650 mg q6h PRN, guaifenesin 600 mg BID) match the discharge summary doses and frequencies exactly. ER warning signs and call-doctor symptoms align with the discharge, and appointment references (PCP follow-up in 5-7 days, chest X-ray in 4-6 weeks if ordered) are accurate. The minor added detail about sputum color change is a reasonable elaboration of 'worsening cough or sputum' and does not contradict the source.",
+    "_judge_tokens": {
+      "in": 3734,
+      "out": 271
+    },
+    "template": "e7f38fd4311b",
+    "diagnosis": "Community-acquired pneumonia, clinically improving",
+    "example_case": "H08"
+  }
+]

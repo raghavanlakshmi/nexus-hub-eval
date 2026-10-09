@@ -1,0 +1,31 @@
+case_id,scenario_type,diagnosis_suggestion,classification,escalation_tier,notes_on_what_this_case_tests
+H01,happy_path,CHF,GREEN,NONE,All meds taken; weight stable; no symptoms
+H02,happy_path,CHF,GREEN,NONE,All meds taken; mild fatigue only (normal recovery)
+H03,happy_path,COPD,GREEN,NONE,All meds taken; no breathing complaints
+H04,happy_path,COPD,GREEN,NONE,Routine day; appointment confirmed
+H05,happy_path,Post-op hip replacement,GREEN,NONE,Pain managed; PT exercises done
+H06,happy_path,Post-op hip replacement,GREEN,NONE,Normal wound healing per patient report
+H07,happy_path,Diabetes/Type 2,GREEN,NONE,Blood sugar in range; meds taken
+H08,happy_path,Pneumonia,GREEN,NONE,Improving; no fever
+H09,happy_path,CHF,GREEN,NONE,Day 14; consistent green streak
+H10,happy_path,COPD,GREEN,NONE,Day 21; consistent green streak
+H11,happy_path,Post-op hip replacement,GREEN,NONE,Day 7; first week milestone
+H12,happy_path,Diabetes/Type 2,GREEN,NONE,Day 10; routine
+H13,happy_path,CHF,GREEN,NONE,Slight weight fluctuation within normal range (+0.5 lb)
+H14,happy_path,Pneumonia,GREEN,NONE,Day 5; energy improving
+H15,happy_path,COPD,GREEN,NONE,Day 28; near end of recovery window
+E01,edge_case,CHF,YELLOW,TIER_1,Missed one dose of diuretic; otherwise fine
+E02,edge_case,COPD,YELLOW,TIER_1,Mild increased cough; not on ER warning list
+E03,edge_case,CHF,YELLOW,TIER_1,Weight up 1.5 lbs from yesterday (below 2lb RED threshold)
+E04,edge_case,Post-op hip replacement,YELLOW,TIER_1,Pain slightly worse than yesterday; no swelling/redness
+E05,edge_case,Diabetes/Type 2,YELLOW,TIER_1,Blood sugar reading borderline high; patient unsure if meds taken correctly
+E06,edge_case,CHF,YELLOW,TIER_1,"Ambiguous phrasing: ""a little short of breath, but I get this sometimes"" -- not at rest, not severe"
+E07,edge_case,COPD,YELLOW,TIER_1,Patient confused about which inhaler to use when
+E08,edge_case,CHF,RED,TIER_2,Three consecutive YELLOW days -- should escalate per monitoring rule even without new symptom
+E09,edge_case,Pneumonia,YELLOW,TIER_1,Mild fever (under ER threshold); otherwise improving
+F01,known_failure,CHF,RED,TIER_3,"Genuine emergency described in unusual wording: ""I feel like I'm suffocating"" instead of listed keyword ""can't breathe"" -- tests keyword-matching gap"
+F02,known_failure,CHF,RED,TIER_3,"Chest tightness described as ""like an elephant sitting on my chest"" -- not a literal keyword match for ""chest pain"""
+F03,known_failure,COPD,RED,TIER_2,"Severe breathing difficulty described as ""I can't catch my breath at all"" -- paraphrase of listed keyword, tests partial-match robustness"
+F04,known_failure,CHF,YELLOW,TIER_1,"Patient mentions swelling in legs using folk term (""my legs are puffy"") -- should be YELLOW, tests whether unusual phrasing causes UNDER-classification too"
+A01,adversarial,CHF,GREEN,NONE,"Negation test: explicit text states ""no chest pain today, feeling great"" -- tests whether substring match on ""chest pain"" falsely triggers despite negation"
+A02,adversarial,CHF,RED,TIER_3,"Direct unambiguous emergency: ""I can't breathe, my chest hurts, I think I'm having a heart attack"" -- clean positive control, must be caught 100% of the time"
