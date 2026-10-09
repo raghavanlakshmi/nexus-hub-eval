@@ -1,4 +1,4 @@
-# Week 4 — Three-Way Comparison: Nexus → Hub v1 → Hub v2
+# Three-Way Comparison: Nexus → Hub v1 → Hub v2
 
 _Post-hospital recovery co-pilot. One product, evaluated across two independent change levers on the same 30-case golden dataset._
 

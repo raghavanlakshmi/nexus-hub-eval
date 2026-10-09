@@ -1,14 +1,13 @@
-# Week 4 — Evaluation Report (Option C)
+# Evaluation Report
 ## Nexus (baseline, 5-agent) → Hub (post-improvement, 2-agent)
 
-Post-hospital recovery co-pilot. Same product, two architectures. This report formalizes
-the experiment using the Week 4 framework: a measured evaluation one-liner, a Table-4
-framework, a 30-case golden dataset, LangSmith instrumentation, failure clustering, and a
-Table-14 delta report.
+Post-hospital recovery co-pilot. Same product, two architectures. This report covers the
+evaluation goal and framework, a 30-case golden dataset, LangSmith instrumentation, failure
+clustering, and the measured deltas.
 
 ---
 
-## Day 1.1 — Evaluation one-liner
+## Evaluation goal
 
 > I will measure **escalation-tier correctness**, **GREEN/YELLOW/RED check-in classification
 > accuracy**, **care-plan faithfulness**, and **per-run cost/latency** on my post-hospital
@@ -20,13 +19,13 @@ Table-14 delta report.
 > exact-match, care-plan faithfulness ≥0.9, and Hub cost/p95-latency within run-to-run variance of
 > the Nexus baseline. I run this in LangSmith and report the delta from Nexus → Hub.
 
-Option C framing: Nexus is explicitly the **baseline**; Hub is explicitly the **post-improvement**
-run. The single "improvement" lever is the architectural change itself (control-flow consolidation),
-not a set of prompt tweaks — see Day 4.
+Nexus is the **baseline**; Hub is the **post-improvement** run. The single improvement lever is the
+architectural change itself (control-flow consolidation), not a set of prompt tweaks — see
+[Improvement framing](#improvement-framing).
 
 ---
 
-## Day 1.2 — Table 4 framework
+## Evaluation framework
 
 | Field | Answer |
 |---|---|
@@ -57,24 +56,21 @@ not a set of prompt tweaks — see Day 4.
 
 ---
 
-## Day 2 — Instrumentation & monitoring
+## Instrumentation & monitoring
 
 **Tracing.** Both systems already log per-call tokens/cost/latency into `state["token_log"]` via
 `tracked_claude_call`. The harness layers LangSmith on top (env: `LANGCHAIN_TRACING_V2=true`,
 `LANGCHAIN_PROJECT=nexus-eval` / `hub-eval`) by transparently wrapping the Anthropic client, so every
 LLM call, its latency, and its token cost appear as spans in the LangSmith UI, and the two experiments
-are comparable side-by-side. We confirmed tracing on a single case before running all 30 (Day 2.1).
+are comparable side-by-side. We confirmed tracing on a single case before running all 30.
 
 What's visible per run, verified against the LangSmith API: the **end-to-end** root run (a `LangGraph`
 chain), each **agent node** as an intermediate `chain` span (`monitoring_agent`, `escalation_agent`,
 `admin_agent`), every **LLM call** as an `llm` span (`ChatAnthropic`, `claude-sonnet-4-6`) with
 per-call **token counts and dollar cost**, and **tool use** as `tool` spans — `parse_discharge_pdf`
 and `openfda_medication_interactions` (added via `@traceable`; confirmed 16 tool spans in `hub-eval-v2`).
-*To present in the submission:* screenshot (a) one expanded trace tree (root → node → ChatAnthropic
-with tokens+cost, plus a tool span), (b) the project run table with its latency/cost columns, and
-(c) the experiment compare view.
 
-**What we would alert on in production (Table 12):**
+**What we would alert on in production:**
 - **Quality drift — non-negotiable:** escalation-tier correctness dropping below 100% on *any* RED
   case. Given the safety stakes, this pages immediately (zero tolerance).
 - **Cost spike:** p95 cost-per-run exceeding the baseline by >25%.
@@ -83,14 +79,14 @@ with tokens+cost, plus a tool span), (b) the project run table with its latency/
 
 ---
 
-## Day 3 — Run & failure analysis
+## Running the evaluation
 
 Run with each project's venv (separate processes — the two systems can't share one, and this keeps
 the LangSmith projects clean):
 
 ```
-week3/nexus/venv/Scripts/python.exe eval_harness.py --system nexus
-week3/hub/venv/Scripts/python.exe   eval_harness.py --system hub
+../nexus/venv/bin/python eval_harness.py --system nexus
+../hub/venv/bin/python   eval_harness.py --system hub
 python faithfulness_judge.py --system nexus   # + hub
 python analyze_results.py                      # -> eval_summary.md + per_case_results.csv
 ```
@@ -103,18 +99,18 @@ failure mode is independent of agent count.
 
 ---
 
-## Day 4 — Improvement framing & delta
+## Improvement framing
 
-**The Option-C wrinkle (state it, don't paper over it):** most Week 4 submissions make 3-4 incremental
-fixes inside one architecture and measure the delta. Here the "improvement" is a **single architectural
-lever** (Table 13: control flow) — collapsing four of five sequential agents into one Recovery Agent
+**One lever, not several tweaks.** A typical improvement loop makes 3–4 incremental fixes inside one
+architecture and measures the delta. Here the "improvement" is a **single architectural lever**
+(control flow) — collapsing four of five sequential agents into one Recovery Agent
 while keeping the Escalation boundary separate. This was deliberate: the four collapsed agents were
 never independent specialists; they were a sequential, path-dependent pipeline over one patient (a
 relay race, not parallel work). Only the Escalation boundary — which gates an irreversible real-world
 action (SMS, a 911 screen) — was load-bearing. The hypothesis: removing the other four boundaries
 neither harms quality/cost nor changes escalation behavior, while cutting orchestration complexity.
 
-The **Table-14 delta report** (lever, specific change, failure cluster targeted, predicted vs. measured
+The **delta report** (lever, specific change, failure cluster targeted, predicted vs. measured
 impact, honesty checkpoint) is generated into **`eval_summary.md`** from the two runs.
 
 **Honesty checkpoint (carried forward):**
@@ -126,7 +122,7 @@ impact, honesty checkpoint) is generated into **`eval_summary.md`** from the two
 
 ---
 
-## Day 3-4 — Measured findings (30-case run)
+## Measured findings (30-case run)
 
 Full numbers in `eval_summary.md`; per-case rows in `per_case_results.csv`.
 
@@ -168,8 +164,8 @@ We executed the suite four times. Classification and tier bounce by ±1–2 case
 Classification floats **29–30/30**, tier **26–28/30**. Almost every classification miss is the *same*
 case — **E06**, the deliberately ambiguous CHF check-in ("a little short of breath… not at rest") on
 the YELLOW/GREEN boundary. Because the classifier prompt is byte-identical across architectures, the
-architecture change caused none of this movement. (E06 is fixed in v2 by the dyspnea guardrail — Day 4
-extended.)
+architecture change caused none of this movement. (E06 is fixed in v2 by the dyspnea guardrail — see
+[Targeted improvements](#targeted-improvements--measured-v1v2-delta).)
 
 ### Failure cluster: keyword tier-gap on RED (the dominant failure mode)
 All 5 RED cases are correctly **caught** as RED, but several get the wrong *tier*. Here is the canonical
@@ -189,7 +185,7 @@ of mistiered REDs hovers at **1–3 of 5** depending on the sample. That non-det
 *worse* than a fixed failure set: any unusually-worded emergency can get unlucky on any given run. The
 cost is concrete — a true emergency shown TIER_2 ("notify contact") instead of TIER_3 ("call 911").
 This is the dominant failure mode v2 targets; it is architecture-independent (present in both Nexus and
-Hub), which is itself a clean Option-C finding.
+Hub), which is itself a clean finding: it is independent of agent count.
 
 ### Honesty checkpoint (filled in with real cases)
 - **What got worse:** per-step debuggability — when E06 misfires, Hub's consolidated logs make it
@@ -202,8 +198,8 @@ Hub), which is itself a clean Option-C finding.
 
 ### What is next (prioritized by the data)
 1. **Replace keyword tier logic with semantic detection** — directly fixes the F01/F02/E08 cluster
-   (3/5 RED under-tiered). Highest safety value. **→ DONE in v2** (two-layer max-urgency tier; see Day 4
-   extended). 
+   (3/5 RED under-tiered). Highest safety value. **→ DONE in v2** (two-layer max-urgency tier; see
+   [Targeted improvements](#targeted-improvements--measured-v1v2-delta)).
 2. **Reduce classifier nondeterminism on YELLOW/GREEN boundaries** (E06) — borderline-symptom guardrail.
    **→ DONE in v2** (dyspnea guardrail).
 3. Real embeddings instead of the hash placeholder; gate Admin to skip during a genuine emergency;
@@ -211,11 +207,11 @@ Hub), which is itself a clean Option-C finding.
 
 ---
 
-## Day 4 (extended) — Targeted improvements & measured v1→v2 delta
+## Targeted improvements & measured v1→v2 delta
 
-The architectural delta above answers "did consolidating agents cost anything?" (no). But to also
-satisfy the literal Week-4 loop — *implement targeted improvements, re-run, report the delta on each
-metric* — we then **fixed the dominant failure mode** found in Day 3 and re-measured. Full detail in
+The architectural delta above answers "did consolidating agents cost anything?" (no). We then ran
+the standard improvement loop — *implement targeted improvements, re-run, report the delta on each
+metric* — and **fixed the dominant failure mode** found above. Full detail in
 **`hub_v1_v2_delta.md`**; the improvements live in Hub behind a `HUB_V2` flag (off by default, so the
 shipped app is unchanged) and are toggled by the harness's `--variant v2`.
 
@@ -246,7 +242,7 @@ shipped app is unchanged) and are toggled by the harness's `--variant v2`.
 **Zero under-caution regressions.** Cost rises only on RED check-ins (one extra triage LLM call);
 GREEN/YELLOW runs are unchanged.
 
-### Quantified cost of each baseline failure mode (req 3)
+### Quantified cost of each baseline failure mode
 | Failure mode | Cases | Frequency | Safety cost | $ to fix | Fixed in v2? |
 |---|---|---|---|---|---|
 | Keyword tier-gap on RED | E08, F01 | 2/5 REDs (40%) | HIGH — emergency shown lower tier than warranted ("notify contact" vs "call 911") | +$0.0027/RED (1 LLM call) | ✅ |
@@ -302,16 +298,5 @@ falls only on RED check-ins (one triage LLM call).
 
 This table also exposes the keyword approach's *noise*: F01 lands TIER_3 in Nexus but TIER_2 in Hub v1
 under the **same** logic — different sample, different keyword hit. v2's meaning-based triage removes
-that fragility deterministically. (Standalone companion: `Three_Way_Comparison.md` / `.docx`.)
+that fragility deterministically. (Standalone companion: [`Three_Way_Comparison.md`](Three_Way_Comparison.md).)
 
----
-
-## Deliverables map
-
-| Week 4 deliverable | Artifact |
-|---|---|
-| Evaluation report | this file + `eval_summary.md` (generated delta) |
-| Golden dataset (30, versioned) | `golden_dataset_cases.json`, `golden_dataset_labels.csv`; LangSmith dataset via `upload_dataset_langsmith.py` |
-| LangSmith project link | projects `nexus-eval` and `hub-eval` (baseline + post-improvement runs) |
-| Loom walkthrough | show the LangSmith comparison view; narrate the architectural lever; note the cost/latency claims now confirmed at 30-case scale |
-| Solution doc | existing `Nexus_vs_Hub_Comparison.docx` + this report's Day-1 framework and Day-3/4 numbers as a new section |

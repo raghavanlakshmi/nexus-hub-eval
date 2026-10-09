@@ -1,5 +1,5 @@
 """
-Week 4 — Care-plan faithfulness LLM-as-judge (Table 4 metric #3).
+Care-plan faithfulness LLM-as-judge.
 
 The care plan is discharge-determined (not check-in-determined), so faithfulness
 is scored once per unique discharge template (5 of them) rather than per case.

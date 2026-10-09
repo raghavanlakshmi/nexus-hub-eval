@@ -1,5 +1,5 @@
 """
-Week 4 — Hub v1 (baseline) -> Hub v2 (improved) delta + quantified failure-cost table.
+Hub v1 (baseline) -> Hub v2 (improved) delta + quantified failure-cost table.
 
 Satisfies requirement 3 ("cluster failures, find the dominant failure mode, quantify the cost
 of each") and requirement 4 ("implement 3-4 improvements, re-run, report the measured delta").
@@ -76,7 +76,7 @@ def main():
         (safe_over if got_s > exp_s else unsafe_under).append(i)
 
     L = []
-    L.append("# Week 4 — Hub v1 (baseline) -> v2 (improved) delta\n")
+    L.append("# Hub v1 (baseline) -> v2 (improved) delta\n")
     L.append("Three targeted improvements implemented behind the `HUB_V2` flag, re-run on the same "
              "30-case golden dataset. Care plans are unchanged (improvements touch monitoring + "
              "escalation only), so care-plan faithfulness carries over (mean ~0.96).\n")

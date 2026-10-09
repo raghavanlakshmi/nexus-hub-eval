@@ -1,5 +1,5 @@
 """
-Week 4 — Option C evaluation harness (single system per process).
+Evaluation harness (single system per process).
 
 Runs the 30-case golden dataset through ONE recovery co-pilot architecture and
 records, per case: classification (GREEN/YELLOW/RED), escalation tier, the
@@ -8,8 +8,8 @@ usage tracker.
 
 Invoke once per system, each with that project's venv:
 
-    week3/nexus/venv/Scripts/python.exe eval_harness.py --system nexus
-    week3/hub/venv/Scripts/python.exe   eval_harness.py --system hub
+    ../nexus/venv/bin/python eval_harness.py --system nexus
+    ../hub/venv/bin/python   eval_harness.py --system hub
 
 Why subprocess-per-system: Nexus and Hub both expose a module named
 `agents.orchestrator` (different APIs, different venvs), so they cannot be

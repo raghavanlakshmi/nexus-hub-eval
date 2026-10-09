@@ -31,7 +31,7 @@ while the orchestration shrinks. The four collapsed agent boundaries weren't pay
 urgent — fixed it. The only remaining miss is a *safe* over-escalation on a borderline case;
 **zero unsafe regressions**. Extra cost is one LLM call, only on RED check-ins.
 
-Full write-up: [Week4_Evaluation_Report.md](Week4_Evaluation_Report.md) ·
+Full write-up: [EVALUATION_REPORT.md](EVALUATION_REPORT.md) ·
 [Three_Way_Comparison.md](Three_Way_Comparison.md) · [hub_v1_v2_delta.md](hub_v1_v2_delta.md) · [eval_summary.md](eval_summary.md)
 
 ## Method

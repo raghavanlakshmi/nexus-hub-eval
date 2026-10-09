@@ -1,5 +1,5 @@
 """
-Week 4 — Unified three-way comparison: Nexus -> Hub v1 -> Hub v2.
+Unified three-way comparison: Nexus -> Hub v1 -> Hub v2.
 
 Tells the whole story as two independent levers:
   Lever A (architecture):  Nexus (5-agent) -> Hub v1 (2-agent, same prompts/logic)
@@ -66,7 +66,7 @@ def main():
     F = {k: faith_mean(FAITH[k]) for k in have}
 
     L = []
-    L.append("# Week 4 — Three-Way Comparison: Nexus → Hub v1 → Hub v2\n")
+    L.append("# Three-Way Comparison: Nexus → Hub v1 → Hub v2\n")
     L.append("_Post-hospital recovery co-pilot. One product, evaluated across two independent change "
              "levers on the same 30-case golden dataset._\n")
 

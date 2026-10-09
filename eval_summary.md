@@ -1,4 +1,4 @@
-# Week 4 — Evaluation Results: Nexus (baseline) vs Hub (post-improvement)
+# Evaluation Results: Nexus (baseline) vs Hub (post-improvement)
 
 _Golden dataset: 30 cases (15 happy / 9 edge / 4 known-failure / 2 adversarial)._
 
@@ -36,7 +36,7 @@ _Golden dataset: 30 cases (15 happy / 9 edge / 4 known-failure / 2 adversarial).
 - **Under-classification (predicted LESS severe than truth — safety-critical)**: 1 — E06
 - **Keyword tier-gap on RED (right RED call, wrong tier)**: 2 — E08, F01
 
-## Delta — Nexus (baseline) -> Hub (post-improvement)  [Table 14]
+## Delta — Nexus (baseline) -> Hub (post-improvement)
 
 **Lever:** Control flow — collapse Intake/CarePlan/Monitoring/Admin into one Recovery Agent; keep Escalation as the sole separate, conditionally-routed boundary.
 

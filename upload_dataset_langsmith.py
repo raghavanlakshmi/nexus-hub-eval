@@ -1,12 +1,12 @@
 """
-Week 4 — Upload the golden dataset to LangSmith as a versioned Dataset (Table 10).
+Upload the golden dataset to LangSmith as a versioned Dataset.
 
 Per the handout, the golden set should live as a LangSmith Dataset (re-runnable, versioned),
 not a loose spreadsheet. This reads golden_dataset_cases.json and creates/updates a dataset
 whose examples carry the check-in inputs and the hand-written ground-truth outputs.
 
 Prereq: set LANGCHAIN_API_KEY (and optionally LANGSMITH_ENDPOINT) in the environment or in
-week3/nexus/.env. Free tier at https://smith.langchain.com works.
+the nexus .env (see eval_harness.system_root). Free tier at https://smith.langchain.com works.
 
     python upload_dataset_langsmith.py
     python upload_dataset_langsmith.py --name nexus-hub-golden-v1
@@ -30,7 +30,7 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--name", default="nexus-hub-recovery-golden-v1")
     ap.add_argument("--description",
-                    default="Week4 Option C — 30-case post-discharge golden set "
+                    default="Nexus vs Hub — 30-case post-discharge golden set "
                             "(15 happy / 9 edge / 4 known-failure / 2 adversarial). "
                             "Ground truth: classification + escalation tier, hand-labeled.")
     args = ap.parse_args()

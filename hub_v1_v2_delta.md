@@ -1,4 +1,4 @@
-# Week 4 — Hub v1 (baseline) -> v2 (improved) delta
+# Hub v1 (baseline) -> v2 (improved) delta
 
 Three targeted improvements implemented behind the `HUB_V2` flag, re-run on the same 30-case golden dataset. Care plans are unchanged (improvements touch monitoring + escalation only), so care-plan faithfulness carries over (mean ~0.96).
 

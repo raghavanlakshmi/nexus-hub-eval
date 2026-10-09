@@ -1,9 +1,9 @@
 """
-Week 4 — Day 3-4 analysis: score the runs, cluster failures, emit the delta report.
+Analysis: score the runs, cluster failures, emit the delta report.
 
 Reads results_{nexus,hub}.json (and faithfulness_{nexus,hub}.json if present) and writes:
   * per_case_results.csv      — one row per case per system (for the appendix / LangSmith parity)
-  * eval_summary.md           — metrics table, failure clusters, Nexus->Hub delta (Table 14 shape)
+  * eval_summary.md           — metrics table, failure clusters, Nexus->Hub delta
 
 No LLM calls here — pure scoring over the captured run artifacts.
 """
@@ -149,7 +149,7 @@ def main():
     csv_path = write_csv(have)
 
     L = []
-    L.append("# Week 4 — Evaluation Results: Nexus (baseline) vs Hub (post-improvement)\n")
+    L.append("# Evaluation Results: Nexus (baseline) vs Hub (post-improvement)\n")
     L.append(f"_Golden dataset: 30 cases (15 happy / 9 edge / 4 known-failure / 2 adversarial)._\n")
 
     # Headline metrics table
@@ -207,10 +207,10 @@ def main():
             L.append("- _No failures in any cluster._")
         L.append("")
 
-    # Delta (Table 14)
+    # Delta report
     if "nexus" in have and "hub" in have:
         nx, hb = summaries["nexus"], summaries["hub"]
-        L.append("## Delta — Nexus (baseline) -> Hub (post-improvement)  [Table 14]\n")
+        L.append("## Delta — Nexus (baseline) -> Hub (post-improvement)\n")
         L.append("**Lever:** Control flow — collapse Intake/CarePlan/Monitoring/Admin into one Recovery Agent; "
                  "keep Escalation as the sole separate, conditionally-routed boundary.\n")
         L.append("| Dimension | Nexus | Hub | Delta |")

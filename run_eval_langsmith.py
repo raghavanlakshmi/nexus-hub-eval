@@ -1,12 +1,12 @@
 """
-Week 4 — LangSmith experiment runner (build-guide Step 3.1 / 3.2).
+LangSmith experiment runner.
 
 Runs the golden dataset through ONE system as a LangSmith *experiment* using
 `langsmith.evaluate(...)`, so each case is scored in-UI by three evaluators and
 the two experiments (Nexus baseline vs Hub post-improvement) line up in the
 side-by-side comparison view.
 
-Evaluators (exactly the three from Table 4 / the build guide):
+Evaluators (the three from the evaluation framework):
   * exact_match_classification     — GREEN/YELLOW/RED vs ground truth
   * exact_match_escalation_tier    — NONE/TIER_1/2/3 vs ground truth
   * care_plan_faithfulness_judge   — LLM-as-judge (cached per discharge template)
@@ -14,8 +14,8 @@ Evaluators (exactly the three from Table 4 / the build guide):
 Reuses the per-case pipeline logic from eval_harness so there is one source of truth.
 
 Run each system with its own venv (after LANGCHAIN_API_KEY is set):
-    week3/nexus/venv/Scripts/python.exe run_eval_langsmith.py --system nexus
-    week3/hub/venv/Scripts/python.exe   run_eval_langsmith.py --system hub
+    ../nexus/venv/bin/python run_eval_langsmith.py --system nexus
+    ../hub/venv/bin/python   run_eval_langsmith.py --system hub
 
 Then open the dataset in LangSmith and compare experiments `nexus-baseline-*` and
 `hub-post-improvement-*`.
