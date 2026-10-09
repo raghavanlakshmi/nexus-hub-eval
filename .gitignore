@@ -12,9 +12,6 @@ venv/
 *.log
 *_backup.json
 
-# regenerable outputs from an earlier run (rerun analyze_results.py to rebuild)
-eval_summary.md
-per_case_results.csv
 
 # Word exports and course-submission artifacts (Markdown versions are the source)
 *.docx
